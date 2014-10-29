@@ -1,0 +1,26 @@
+{% include "entete.html" %}
+	<title>{{ page.data.title }}</title>
+	{% include "styles.html" %}
+</head>
+<body>
+	<!-- PAGE : {{ page.nom }} -->
+	{% include "test.html" %}
+	<div id="BIG" class="{{ page.data.imagefond }}">
+		{% include "menuhaut.html" %}
+		{% if page.data.menudroite is defined %}
+		{% set extBP = '' %}
+		{% else %}
+		{% set extBP = ' class="extBP"' %}
+		{% endif %}
+		<div id="blocPpal"{{ extBP|raw }}>
+			{% include "video_import.html" %}
+		</div>
+		{% include "menudroite.html" %}
+		{% include "popin01.html" %}
+		{% if page.animation is defined %}
+		{% include "sprites.html" with {animation: page.animation } %}
+		{% endif %}
+	</div>
+	{% include "javascripts.html" %}
+</body>
+</html>

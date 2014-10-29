@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig
+END
+FunctionInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/FunctionInterface.php
+END
+Compiler.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Compiler.php
+END
+ExpressionParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/ExpressionParser.php
+END
+ParserInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/ParserInterface.php
+END
+Lexer.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Lexer.php
+END
+Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Test.php
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Token.php
+END
+Node.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Node.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Filter.php
+END
+FunctionCallableInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/FunctionCallableInterface.php
+END
+NodeOutputInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/NodeOutputInterface.php
+END
+LoaderInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/LoaderInterface.php
+END
+ExistsLoaderInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/ExistsLoaderInterface.php
+END
+Parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Parser.php
+END
+ExtensionInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/ExtensionInterface.php
+END
+TokenParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TokenParser.php
+END
+SimpleFunction.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/SimpleFunction.php
+END
+LexerInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/LexerInterface.php
+END
+TestInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TestInterface.php
+END
+NodeInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/NodeInterface.php
+END
+FilterInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/FilterInterface.php
+END
+Template.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Template.php
+END
+Extension.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension.php
+END
+TokenParserInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TokenParserInterface.php
+END
+TestCallableInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TestCallableInterface.php
+END
+NodeTraverser.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/NodeTraverser.php
+END
+TokenParserBrokerInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TokenParserBrokerInterface.php
+END
+Function.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Function.php
+END
+NodeVisitorInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/NodeVisitorInterface.php
+END
+FilterCallableInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/FilterCallableInterface.php
+END
+SimpleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/SimpleTest.php
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Error.php
+END
+CompilerInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/CompilerInterface.php
+END
+TemplateInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TemplateInterface.php
+END
+TokenStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TokenStream.php
+END
+SimpleFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/SimpleFilter.php
+END
+Markup.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Markup.php
+END
+Autoloader.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Autoloader.php
+END
+TokenParserBroker.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/TokenParserBroker.php
+END
+Environment.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Environment.php
+END

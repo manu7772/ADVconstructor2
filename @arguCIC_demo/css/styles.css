@@ -1,0 +1,284 @@
+* {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	/*font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;*/
+	text-decoration:none;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+*:focus	{outline: none;}
+img		{border: none;}
+a		{color: #999;text-decoration: none;}
+a:hover	{text-decoration: underline;}
+ul		{list-style-type: none;}
+
+html, body {
+	height:100%;
+}
+
+div#test {
+	background-color: #555;
+	text-align: left;
+	color: white;
+	font-size: 14px;
+	line-height: 18px;
+	height: 18px;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	padding: 0px 6px;
+}
+.fill {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.fill-it {
+	background-repeat: repeat;
+	background-position: left top;
+	background-size: contain;
+}
+.fill-itnr {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}
+
+.fill70 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+.fadein {
+	display: none;
+}
+.separ {
+	clear: both;
+	display: block;
+}
+.separ48 { height: 48px; }
+.separ180 { height: 180px; }
+
+
+  /***************************/
+ /* STYLES STANDARDS        */
+/***************************/
+.gras {
+	font-weight: bold;
+}
+
+
+  /***************************/
+ /* STRUCTURE DE PAGE       */
+/***************************/
+body {
+	background-color: #02468b;
+}
+
+div#BIG {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	/*height: 640px;*/
+}
+div#BIG800 {
+	position: relative;
+	margin: 0px auto;
+	height: 680px;
+	width: 1000px;
+}
+div.BIG_accueil {
+	background:red;
+}
+div.BIG_neutre {
+	background:orange;
+}
+video {
+	z-index:0;
+}
+
+div#navigator {
+	position: fixed;
+	top: 8px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+}
+div#navigatorIE {
+	display: block;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+}
+div#navigatorIE >div.fleche-gauche,
+div#navigatorIE >div.fleche-droite,
+div#navigatorIE >div.fleche-gauche >a,
+div#navigatorIE >div.fleche-droite >a,
+div#navigator >div.fleche-gauche,
+div#navigator >div.fleche-droite,
+div#navigator >div.fleche-gauche >a,
+div#navigator >div.fleche-droite >a {
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+div#navigatorIE >div.fleche-gauche >a,
+div#navigatorIE >div.fleche-droite >a,
+div#navigator >div.fleche-gauche >a,
+div#navigator >div.fleche-droite >a {
+	cursor: pointer;
+}
+div#navigatorIE >div.fleche-gauche,
+div#navigator >div.fleche-gauche {
+	float: left;
+	background:transparent url("images/fleches2.png") left top no-repeat;
+	margin-left: 8px;
+}
+div#navigatorIE >div.fleche-droite,
+div#navigator >div.fleche-droite {
+	float: right;
+	background:transparent url("images/fleches2.png") -40px top no-repeat;
+	margin-right: 8px;
+}
+#homeButton {
+	cursor: pointer;
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;	display: block;
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background:transparent url("images/retour.png") center top no-repeat;
+}
+
+div#mentions {
+	position: absolute;
+	bottom: 8px;
+	left: 76px;
+	z-index: 999;
+	width: auto;
+	height: auto;
+	padding-right: 390px; /* pour laisser la place à la signature à droite */
+	display: block;
+	font-size: 10px;
+	color: white;
+	text-align: left;
+	font-weight: normal;
+}
+
+div.sprite,
+div.ctrlsprite {
+	position: absolute;
+	display: none;
+}
+
+
+  /***************************/
+ /* page_01_01_1            */
+/***************************/
+
+ul.sommaire1, ul.sommaire2 {
+	list-style-type: none;
+	display: block;
+	margin: 0px auto;
+	width: 650px;
+}
+ul.sommaire2 {
+	width: 100%;
+}
+ul.sommaire1 >li {
+	display: inline-block;
+	width: 126px;
+}
+ul.sommaire2 >li {
+	display: inline-block;
+	width: 232px;
+}
+
+a.bouton01 {
+	display: block;
+	width: 126px;
+	height: 54px;
+}
+li:hover >a.bouton01 {
+	background-position: 0px -54px;
+}
+
+a.bouton02 {
+	display: block;
+	width: 232px;
+	height: 68px;
+}
+li:hover >a.bouton02 {
+	background-position: 0px -68px;
+}
+
+a#bout01011-05 {
+	background: transparent url('../images/p3_boutons_05.png') 0px 0px no-repeat;
+}
+a#bout01011-07 {
+	background: transparent url('../images/p3_boutons_07.png') 0px 0px no-repeat;
+}
+a#bout01011-09 {
+	background: transparent url('../images/p3_boutons_09.png') 0px 0px no-repeat;
+}
+a#bout01011-11 {
+	background: transparent url('../images/p3_boutons_11.png') 0px 0px no-repeat;
+}
+a#bout01011-13 {
+	background: transparent url('../images/p3_boutons_13.png') 0px 0px no-repeat;
+}
+a#bout01011-14 {
+	background: transparent url('../images/p3_boutons_14.png') 0px 0px no-repeat;
+}
+a#bout01011-15 {
+	background: transparent url('../images/p3_boutons_15.png') 0px 0px no-repeat;
+}
+a#bout01011-16 {
+	background: transparent url('../images/p3_boutons_16.png') 0px 0px no-repeat;
+}
+a#bout01011-17 {
+	background: transparent url('../images/p3_boutons_17.png') 0px 0px no-repeat;
+}
+a#bout01011-18 {
+	background: transparent url('../images/p3_boutons_18.png') 0px 0px no-repeat;
+}
+a#bout01011-19 {
+	background: transparent url('../images/p3_boutons_19.png') 0px 0px no-repeat;
+}
+a#bout01011-20 {
+	background: transparent url('../images/p3_boutons_20.png') 0px 0px no-repeat;
+}
+a#bout01011-21 {
+	background: transparent url('../images/p3_boutons_21.png') 0px 0px no-repeat;
+}
+
+a#bout01011-28 {
+	background: transparent url('../images/p3_boutons_28.png') 0px 0px no-repeat;
+}
+a#bout01011-30 {
+	background: transparent url('../images/p3_boutons_30.png') 0px 0px no-repeat;
+}
+a#bout01011-32 {
+	background: transparent url('../images/p3_boutons_32.png') 0px 0px no-repeat;
+}
+
+a#bout01022-06 {
+	background: transparent url('../images/p4_boutons_06.png') 0px 0px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

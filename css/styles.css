@@ -1,0 +1,58 @@
+* {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	/*font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;*/
+	text-decoration:none;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+*:focus	{outline: none;}
+img		{border: none;}
+a		{color: #999;text-decoration: none;}
+a:hover	{text-decoration: underline;}
+ul		{list-style-type: none;}
+
+h1 {text-align: center;font-size:20px;margin: 8px 12px 20px;background-color: #ddd;}
+h1 span {color:#666;font-size: 0.8em;}
+h2 {width:90%;font-size:15px;margin: 8px 12px;color:#444;}
+h2 span {color:red;}
+h3 {width: 100%;background-color: #aaa;color: #333;font-size:13px;padding: 3px 12px;}
+p {width:90%;font-size: 12px;margin: 1px 20px;color:#666;}
+.close >p {display:none;}
+.close {cursor: pointer;}
+
+label {font-size: 11px;margin: 0px;color:#666;}
+
+div.fenppale,
+div.renduADV {
+	height:160px;
+	overflow:hidden;
+	border:1px solid black;
+	width:97%;
+	margin: 8px auto;
+}
+div.fenppale {
+	height: auto;
+}
+
+.ok {color:green;}
+.error {color:red;}
+.notice {color:orange;}
+
+ul.listsources {
+	margin: 12px;
+}
+ul.listsources >li {
+	display: inline-block;
+}
+ul.listsources >li >input,
+ul.listsources >li >a {
+	margin: 2px 4px;
+	width: 220px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bolder;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+}

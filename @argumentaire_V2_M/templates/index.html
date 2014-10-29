@@ -1,0 +1,21 @@
+{% include "entete.html" %}
+<title>{{ page.data.title }}</title>
+{% include "styles.html" %}
+</head>
+<body>
+	<!-- PAGE : {{ page.nom }} -->
+	{% if page.menu.menuhaut is defined %}
+	{% include page.menu.menuhaut.modele with {items: page.menu.menuhaut.item} %}
+	{% endif %}
+	<div id="BIG">
+		{% include "video_import.html" %}
+	</div>
+	{% if page.data.baseline is defined %}
+	{% include page.data.baseline ignore missing %}
+	{% endif %}
+
+	{% include "mentions.html" %}
+
+	{% include "javascripts.html" %}
+</body>
+</html>

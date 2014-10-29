@@ -1,0 +1,20 @@
+{% if page.data.videoALT is defined %}
+{% set vidX = '1024' %}
+{% set vidY = '576' %}
+<object type="application/x-shockwave-flash" data="{{ page.go }}video/dewtube.swf" width="{{ vidX }}" height="{{ vidY }}" id="dewtube2">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="true" />
+	<param name="autostart" value="true" />
+	<param name="movie" value="{{ page.go }}video/dewtube.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#000000" />
+	<param name="flashvars" value="movie={{ page.data.videoFLV }}&amp;width={{ vidX }}&amp;height={{ vidY }}&amp;autostart=1" />
+</object>
+{% endif %}
+{% if page.data.fixvideo is defined %}
+<div id="fixvideobloc">
+	<img src="{{ page.go }}images/{{ page.data.fixvideo }}" style="width:{{ vidX }}px;height:{{ vidY }}px;" />
+</div>
+{% endif %}
+
+

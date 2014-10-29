@@ -1,0 +1,285 @@
+{% if page.diaporama is iterable %}
+	<!-- POP-IN -->
+	<div id="popin02">
+		<div id="publow" class="AEdiaporama">
+			<span class="parametres" style="display:none;">
+				<input type="hidden" name="timeL" value="{{ page.diaporama.defaultime }}" />
+				<input type="hidden" name="reaction" value="{{ page.diaporama.reaction }}" />
+				<input type="hidden" name="fadeSpeed" value="{{ page.diaporama.fadespeed }}" />
+				<input type="hidden" name="stopZone" value="{{ page.diaporama.stopzone }}" />
+				<input type="hidden" name="end" value="{{ page.diaporama.endstop }}" />
+				<input type="hidden" name="modei" value="{{ page.diaporama.auto }}" />
+				{% if page.diaporama.stoplink is defined %}
+				<input type="hidden" name="stoplink" value="{{ page.go }}{{ pages[page.diaporama.stoplink].url }}" />
+				{% endif %}
+			</span>
+			<div>
+				{% for diapo in page.diaporama.diapos %}
+				<div><img src="{{ page.go }}images/{{ diapo.image }}" /></div>
+				{% endfor %}
+			</div>
+
+			{% if page.data.menuInPoPmerch1 %}
+			<ul class="inPopUL">
+			{% for item in menus.menuInPoPmerch1.items %}
+				<li class="{{ item.nom }}">
+					{% if item.url != "no_url" %}<a href="{{ page.go }}{{ pages[item.url].url }}"></a>{% endif %}
+				</li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPmerch2_05 %}
+			<ul class="inPopUL2">
+			{% for item in menus.menuInPoPmerch2_05.items %}
+				<li class="{{ item.nom }}">
+					{% if item.url != "no_url" %}<a href="{{ page.go }}{{ pages[item.url].url }}"></a>{% endif %}
+				</li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPmerch2_10 %}
+			<ul class="inPopUL2">
+			{% for item in menus.menuInPoPmerch2_10.items %}
+				<li class="{{ item.nom }}">
+					{% if item.url != "no_url" %}<a href="{{ page.go }}{{ pages[item.url].url }}"></a>{% endif %}
+				</li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPmerch2_15 %}
+			<ul class="inPopUL2">
+			{% for item in menus.menuInPoPmerch2_15.items %}
+				<li class="{{ item.nom }}">
+					{% if item.url != "no_url" %}<a href="{{ page.go }}{{ pages[item.url].url }}"></a>{% endif %}
+				</li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+
+			{% if page.data.menuInPoPsnack1 %}
+			<ul class="inPopUL">
+			{% for item in menus.menuInPoPsnack1.items %}
+				<li class="{{ item.nom }}"><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPsnack2 %}
+			<ul class="inPopUL">
+			{% for item in menus.menuInPoPsnack2.items %}
+				<li class="{{ item.nom }}"><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPsnack3 %}
+			<ul class="inPopUL">
+			{% for item in menus.menuInPoPsnack3.items %}
+				<li class="{{ item.nom }}"><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+			{% if page.data.menuInPoPsnack4 %}
+			<ul class="inPopUL">
+			{% for item in menus.menuInPoPsnack4.items %}
+				<li class="{{ item.nom }}"><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+			{% endfor %}
+			</ul>
+			{% endif %}
+
+			{% if page.data.menuBasConf1f is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf1f.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf1g is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf1g.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf1h is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf1h.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf1i is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf1i.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+
+			{% if page.data.menuBasConf2 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_05 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_05.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_05a is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_05a.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_05b is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_05b.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_05c is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_05c.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_10 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_10.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_10a is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_10a.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_10b is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_10b.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_10c is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_10c.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_15 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_15.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_15a is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_15a.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_15b is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_15b.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasConf2e_15c is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasConf2e_15c.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+
+			{% if page.data.menuBasTart1 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasTart1.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if page.data.menuBasTart2 is defined %}
+			<div id="menuBas">
+				<ul>
+					{% for item in menus.menuBasTart2.items %}
+					{% if item.url == page.nom %}{% set actif = ' class="' ~ item.nom ~ ' MBon"' %}{% else %}{% set actif=' class="' ~ item.nom ~ '"' %}{% endif %}
+					<li{{ actif|raw }}><a href="{{ page.go }}{{ pages[item.url].url }}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			<span class="recule overpbl"></span>
+			<span class="avance overpbl"></span>
+		</div>
+	</div>
+	<!-- POP-IN -->
+{% endif %}

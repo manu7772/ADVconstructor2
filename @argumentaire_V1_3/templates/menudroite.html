@@ -1,0 +1,50 @@
+{% if page.data.menudroiteConf is defined %}
+		{% if menus.menudroiteConf.items.0.url == page.data.menudroiteConf %}
+		{% set addclassA = ' class="popactif"' %}
+		{% set addclassB = '' %}
+		{% set addclassC = '' %}
+		{% endif %}
+		{% if menus.menudroiteConf.items.1.url == page.data.menudroiteConf %}
+		{% set addclassA = '' %}
+		{% set addclassB = ' class="popactif"' %}
+		{% set addclassC = '' %}
+		{% endif %}
+		{% if menus.menudroiteConf.items.2.url == page.data.menudroiteConf %}
+		{% set addclassA = '' %}
+		{% set addclassB = '' %}
+		{% set addclassC = ' class="popactif"' %}
+		{% endif %}
+		<div id="menuDroite">
+			<div id="b1"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteConf.items.0.url].url }}" id="Bmaintenant"{{ addclassA|raw }}></a>
+			<div id="b2"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteConf.items.1.url].url }}" id="Bchezmoi"{{ addclassB|raw }}></a>
+			<div id="b3"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteConf.items.2.url].url }}" id="Bemplcles"{{ addclassC|raw }}></a>
+		</div>
+{% endif %}
+{% if page.data.menudroiteTart is defined %}
+		{% if menus.menudroiteTart.items.0.url == page.data.menudroiteTart %}
+		{% set addclassA = ' class="popactif"' %}
+		{% set addclassB = '' %}
+		{% set addclassC = '' %}
+		{% endif %}
+		{% if menus.menudroiteTart.items.1.url == page.data.menudroiteTart %}
+		{% set addclassA = '' %}
+		{% set addclassB = ' class="popactif"' %}
+		{% set addclassC = '' %}
+		{% endif %}
+		{% if menus.menudroiteTart.items.2.url == page.data.menudroiteTart %}
+		{% set addclassA = '' %}
+		{% set addclassB = '' %}
+		{% set addclassC = ' class="popactif"' %}
+		{% endif %}
+		<div id="menuDroite">
+			<div id="b1"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteTart.items.0.url].url }}" id="Bcesoir"{{ addclassA|raw }}></a>
+			<div id="b2"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteTart.items.1.url].url }}" id="Bchezmoi"{{ addclassB|raw }}></a>
+			<div id="b3"></div>
+			<a href="{{ page.go }}{{ pages[menus.menudroiteTart.items.2.url].url }}" id="Bemplcles"{{ addclassC|raw }}></a>
+		</div>
+{% endif %}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARGUMENTAIRE>
+	<pages>
+		<!-- /////////////////// -->
+		<!-- // INDEX         // -->
+		<!-- /////////////////// -->
+		<page nom="accueil_01" modele="index.html" default="default">
+			<data nom='title' val="CIC - Formation 2014" />
+			<data nom='refresh' val="15|sommaire" />
+			<data nom="fulldoc" val="1" />
+			<data nom='background' val="images/p1.png" />
+			<menu nom="navigator" modele="navigator.html">
+				<!-- <item nom="menuPrec" url="accueil_01" /> -->
+				<item nom="histback" val="-1" />
+				<item nom="menuSuiv" url="sommaire" />
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<!-- /////////////////// -->
+		<!-- // SOMMAIRE      // -->
+		<!-- /////////////////// -->
+		<page nom="sommaire" modele="intro.html">
+			<data nom='title' val="Sommaire" />
+			<data nom="fulldoc" val="2" />
+			<data nom='background' val="images/p3.png" />
+			<data nom='titre' val="images/p3_boutons_02.png" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="histforw" val="1" /> -->
+			</menu>
+			<menu nom="sommaire1">
+				<item nom="accueil00" url="accueil_01" data-effect="100|400" id="bout01011-05" title="Page d'accueil" />
+				<item nom="accueil01" url="accueil_01" data-effect="200|400" id="bout01011-07" title="" />
+				<item nom="accueil02" url="accueil_01" data-effect="300|400" id="bout01011-09" title="" />
+				<item nom="accueil03" url="accueil_01" data-effect="400|400" id="bout01011-11" title="" />
+				<item nom="accueil04" url="accueil_01" data-effect="500|400" id="bout01011-13" title="" />
+				<item nom="accueil05" url="accueil_01" data-effect="600|400" id="bout01011-14" title="" />
+				<item nom="CP" url="page_CP_01" data-effect="700|400" id="bout01011-15" title="CP" />
+				<item nom="accueil07" url="accueil_01" data-effect="800|400" id="bout01011-16" title="" />
+				<item nom="accueil08" url="accueil_01" data-effect="900|400" id="bout01011-17" title="" />
+				<item nom="accueil09" url="accueil_01" data-effect="1000|400" id="bout01011-18" title="" />
+				<item nom="accueil10" url="accueil_01" data-effect="1100|400" id="bout01011-19" title="" />
+				<item nom="accueil11" url="accueil_01" data-effect="1200|400" id="bout01011-20" title="" />
+				<item nom="accueil12" url="accueil_01" data-effect="1300|400" id="bout01011-21" title="" />
+			</menu>
+			<menu nom="sommaire2">
+				<item nom="accueil13" url="accueil_01" data-effect="1800|400" id="bout01011-28" title="" />
+				<item nom="accueil14" url="accueil_01" data-effect="1900|400" id="bout01011-30" title="" />
+				<item nom="accueil15" url="accueil_01" data-effect="2000|400" id="bout01011-32" title="" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // PAGES         // -->
+		<!-- /////////////////// -->
+
+		<!-- CP:01 -->
+		<page nom="page_CP_01" modele="sous-intro-1.html">
+			<data nom='title' val="CP" />
+			<data nom="fulldoc" val="3" />
+			<data nom='background' val="images/p4_fond.png" />
+			<data nom='titre' val="images/p4_boutons_03.png" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<item nom="menuSuiv" url="page_CP_02" />
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="sommaire2">
+				<item nom="accueil01" url="page_CP_02" data-effect="500|400" id="bout01022-06" title="" />
+			</menu>
+		</page>
+		<!-- CP:02 -->
+		<page nom="page_CP_02" modele="page-tableau.html">
+			<data nom='title' val="CP - Tableau1" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="visuPleinePage" val="images/P4_textes.png" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+	</pages>
+</ARGUMENTAIRE>

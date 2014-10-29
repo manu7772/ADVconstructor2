@@ -1,0 +1,17 @@
+<div id='navigator'>
+	{% if page.menu.navigator.item.menuPrec is defined %}
+	<div class="fleche-gauche"><a id="fleche-gauche" href="{{ page.go }}{{ pages[page.menu.navigator.item.menuPrec.url].url }}" title="{{ pages[page.menu.navigator.item.menuPrec.url].data.title }}"></a></div>
+	{% elseif page.menu.navigator.item.histback is defined %}
+	<div class="fleche-gauche"><a id="fleche-gauche" title="Retour arrière" onclick="history.go({{ page.menu.navigator.item.histback.val }});" ></a></div>
+	{% endif %}
+
+	{% if page.menu.navigator.item.menuSuiv is defined %}
+	<div class="fleche-droite"><a id="fleche-droite" href="{{ page.go }}{{ pages[page.menu.navigator.item.menuSuiv.url].url }}" title="{{ pages[page.menu.navigator.item.menuSuiv.url].data.title }}"></a></div>
+	{% elseif page.menu.navigator.item.histforw is defined %}
+	<div class="fleche-droite"><a id="fleche-droite" title="Retour avant" onclick="history.go({{ page.menu.navigator.item.histforw.val }});" ></a></div>
+	{% endif %}
+
+	{% if page.menu.navigator.item.home is defined %}
+	<a id="homeButton" href="{{ page.go }}{{ pages[page.menu.navigator.item.home.url].url }}" class="retour"></a>
+	{% endif %}
+</div>

@@ -1,0 +1,511 @@
+* {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	/*font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;*/
+	text-decoration:none;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+*:focus	{outline: none;}
+img		{border: none;}
+a		{color: #999;text-decoration: none;}
+a:hover	{text-decoration: underline;}
+ul		{list-style-type: none;}
+
+  /***************************/
+ /* STYLES STANDARDS        */
+/***************************/
+.gras {
+	font-weight: bold;
+}
+
+
+  /***************************/
+ /* STRUCTURE DE PAGE       */
+/***************************/
+body {
+	background-color: #000;
+}
+
+div#BIG {
+	margin: 0px auto;
+	width: 900px;
+	height: 675px;
+	background-color:#fff;
+	/*background-color: #fff;*/
+	overflow: hidden;
+/*	min-height:600px;
+	height:auto !important;
+	height:600px;*/
+}
+div.BIG_accueil {
+	background:#fff url("../images/pages-01.png") top center no-repeat;
+}
+div.BIG_neutre {
+	background:#fff url("../images/pages-10.png") top center no-repeat;
+}
+div.BIG_confiserieAN1 {
+	background:#fff url("../images/pages-02.png") top center no-repeat;
+}
+div.BIG_confiserieAN21 {
+	background:#fff url("../images/pages-03.png") top center no-repeat;
+}
+div.BIG_confiserieAN22 {
+	background:#fff url("../images/pages-04.png") top center no-repeat;
+}
+div.BIG_confiserieAN3 {
+	background:#fff url("../images/pages-05.png") top center no-repeat;
+}
+div.BIG_confiserieAN4 {
+	background:#fff url("../images/pages-06.png") top center no-repeat;
+}
+div.BIG_confiserieAN5 {
+	background:#fff url("../images/pages-07.png") top center no-repeat;
+}
+div.BIG_confiserieAN6 {
+	background:#fff url("../images/pages-08.png") top center no-repeat;
+}
+div.BIG_tartinables11 {
+	background:#fff url("../images/pages-11.png") top center no-repeat;
+}
+div.BIG_tartinables12 {
+	background:#fff url("../images/pages-12.png") top center no-repeat;
+}
+
+
+ul#menuHaut {
+	display: block;
+	width: 900px;
+	height: 74px;
+	/*text-align: center;*/
+	list-style-type: none;
+	overflow: hidden;
+}
+ul#menuHaut >li {
+	display: block;
+	float: left;
+	/*border-bottom: 1px solid white;*/
+	vertical-align: top;
+}
+ul#menuHaut >li >a {
+	display: block;
+	width: 180px;
+	height: 56px;
+}
+ul#menuHaut >li:first-child {
+	background: transparent url("../images/onglet01.png") bottom center no-repeat;
+}
+ul#menuHaut >li:first-child +li {
+	background: transparent url("../images/onglet02.png") bottom center no-repeat;
+}
+ul#menuHaut >li:first-child +li +li {
+	background: transparent url("../images/onglet03.png") bottom center no-repeat;
+}
+ul#menuHaut >li:first-child +li +li +li {
+	background: transparent url("../images/onglet04.png") bottom center no-repeat;
+}
+ul#menuHaut >li:first-child +li +li +li +li {
+	background: transparent url("../images/onglet05.png") bottom center no-repeat;
+}
+ul#menuHaut >li.off,
+ul#menuHaut >li.off >a {
+	height: 56px;
+}
+ul#menuHaut >li.on,
+ul#menuHaut >li.on >a {
+	height: 74px;
+}
+
+div#blocPpal {
+	width: 770px;
+	float: left;
+}
+div.extBP {
+	width: 900px;
+}
+div#menuDroite {
+	width: 130px;
+	margin-left: 770px;
+	background: transparent url("../images/boulat_titre.png") center 50px no-repeat;
+}
+div#menuDroite >div#b1 {
+	height: 150px;
+	width: 130px;
+}
+div#menuDroite >div#b2 {
+	height: 20px;
+	width: 130px;
+}
+div#menuDroite >div#b3 {
+	height: 20px;
+	width: 130px;
+}
+div#menuDroite >a#Bmaintenant {
+	display: block;
+	width: 130px;
+	height: 85px;
+	background-attachment: fixed;
+	background: transparent url("../images/boulat_1.png") 0px 0px no-repeat;
+}
+div#menuDroite >a#Bchezmoi {
+	display: block;
+	width: 130px;
+	height: 85px;
+	background-attachment: fixed;
+	background: transparent url("../images/boulat_2.png") 0px 0px no-repeat;
+}
+div#menuDroite >a#Bcesoir {
+	display: block;
+	width: 130px;
+	height: 85px;
+	background-attachment: fixed;
+	background: transparent url("../images/boulat_3.png") 0px 0px no-repeat;
+}
+div#menuDroite >a#Bemplcles {
+	display: block;
+	width: 130px;
+	height: 85px;
+	background-attachment: fixed;
+	background: transparent url("../images/boulat_4.png") 0px 0px no-repeat;
+}
+
+div#videobloc {
+	margin: 112px 0px 0px 0px;
+	padding: 0px;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+}
+
+div#popin01, div#popin02 {
+	display: none;
+	width: 830px;
+	height: 560px;
+	/*z-index: 100;*/
+	background-color: white;
+	overflow: hidden;
+}
+
+/* SURCOUCHE JQUERY */
+.ui-dialog {
+	box-shadow: 0px 0px 14px #000;
+}
+.noTitleStuff .ui-dialog-titlebar {
+	display:none;
+}
+.ui-dialog .ui-dialog-content {
+	padding: 0;
+}
+
+
+/* DIAPORAMAS */
+div#publow {
+	width: 830px;
+	height: 560px;
+	overflow: hidden;
+}
+div#publow >div {
+	width: 830px;
+	height: 550px;
+	overflow: hidden;
+}
+div#publow >div >div {
+	width: 830px;
+	height: 550px;
+}
+
+/* Eléments cliquables sur pop-ins publow */
+div#publow .overpbl {
+	display: block;
+	position: absolute;
+	top: 0px;
+	line-height: 480px;
+	width: 415px;
+	height: 500px;
+}
+div#publow .overpbl >a {
+	width: 415px;
+	height: 500px;
+	display: block;
+}
+div#publow span.recule {
+	display: none;
+	left: 0px;
+	text-align: left;
+	background: transparent url("images/flecheG.png") left bottom no-repeat;
+}
+div#publow span.avance {
+	display: none;
+	right: 0px;
+	text-align: right;
+	background: transparent url("images/flecheD.png") right bottom no-repeat;
+}
+
+div#publow span.stoplink {
+	right: 0px;
+	text-align: right;
+	background: transparent url("images/flecheDmenu.png") right bottom no-repeat;
+}
+
+div#publow ul.inPopUL {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 830px;
+	height: 500px;
+}
+div#publow ul.inPopUL2 {
+	position: absolute;
+	top: 180px;
+	left: 0px;
+	display: block;
+	width: 830px;
+	height: 500px;
+	/*border-top: 1px dotted blue;*/
+}
+
+div#publow ul.inPopUL li.allzone,
+div#publow ul.inPopUL li.allzone >a {
+	display: block;
+	width: 830px;
+	height: 500px;
+	background: transparent url("../images/transparent.png") top left repeat;
+}
+div#publow ul.inPopUL li.trizone {
+	float: left;
+	margin-top: 140px;
+	height: 280px;
+}
+div#publow ul.inPopUL li.trizone >a {
+	display: block;
+	height: 280px;
+	width: 274px;
+	background: transparent url("../images/transparent.png") top left repeat;
+}
+div#publow ul.inPopUL li.trizone:first-child >a {
+	width: 294px;
+	background: transparent url("../images/transparent.png") top left repeat;
+}
+div#publow ul.inPopUL li.trizone:first-child +li >a {
+	width: 254px;
+	background: transparent url("../images/transparent.png") top left repeat;
+}
+div#publow ul.inPopUL li.trizone2 {
+	float: left;
+	margin-top: 80px;
+	height: 100px;
+}
+div#publow ul.inPopUL li.trizone2 >a {
+	display: block;
+	height: 100px;
+	width: 100px;
+	background: transparent url("../images/transparent.png") top left repeat;
+	/*border: 1px dotted orange;*/
+}
+div#publow ul.inPopUL li.trizone2:first-child >a {
+	margin-left: 188px;
+	width: 100px;
+	background: transparent url("../images/transparent.png") top left repeat;
+}
+div#publow ul.inPopUL li.trizone2:first-child +li >a {
+	background: transparent url("../images/transparent.png") top left repeat;
+	width: 100px;
+}
+div#publow ul.inPopUL2 li.trizone3 {
+	display: block;
+	height: 94px;
+}
+div#publow ul.inPopUL2 li.trizone3 >a {
+	display: block;
+	height: 94px;
+	width: 220px;
+	margin-left: 46px;
+	background: transparent url("../images/transparent.png") top left repeat;
+	/*border: 1px dotted orange;*/
+}
+div#publow ul.inPopUL2 li.trizone3:first-child >a {
+}
+div#publow ul.inPopUL2 li.trizone3:first-child +li >a {
+}
+/*
+div#publow >ul {
+	height: 9px;
+	margin: 1px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color: #999;
+}
+div#publow >ul >li {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px 6px;
+	height: 9px;
+	font-size: 8px;
+	line-height: 8px;
+	color: #ddd;
+	cursor: pointer;
+}
+div#publow >ul >li:hover {
+	background-color: #888;
+}
+div#publow >ul >li.actif {
+	background-color: #666;
+}
+*/
+div#menuBas {
+	height: 56px;
+	overflow: hidden;
+	position: absolute;
+	left: 150px;
+	top: 506px;
+}
+
+div#menuBas >ul {
+	display: block;
+	width: 540px;
+	height: 56px;
+	/*text-align: center;*/
+	list-style-type: none;
+	overflow: hidden;
+}
+div#menuBas >ul >li {
+	display: block;
+	width: 180px;
+	height: 56px;
+	float: left;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+div#menuBas >ul >li.onglet1 {
+	background: transparent url("../images/ongletBas01.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li.onglet2 {
+	background: transparent url("../images/ongletBas02.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li.onglet3 {
+	background: transparent url("../images/ongletBas03.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li.onglet4 {
+	background: transparent url("../images/ongletBas04.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li.onglet5 {
+	background: transparent url("../images/ongletBas05.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li.onglet6 {
+	background: transparent url("../images/ongletBas06.png") 0px -1px no-repeat;
+}
+div#menuBas >ul >li >a {
+	display: block;
+	width: 180px;
+	height: 56px;
+}
+
+/* GESTION VIDEO */
+.optivid {
+	display: block;
+	position:absolute;
+	/*border: 1px dotted orange;*/
+	height: 30px;
+	overflow: hidden;
+	text-align: right;
+	cursor: pointer;
+}
+.cursorOff {
+	cursor: default;
+}
+/*boutons après vidéo*/
+#videoConfPC_snacking {
+	top:345px;
+	margin-left:345px;
+	width: 130px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoConfPC_caisses {
+	top:473px;
+	margin-left:165px;
+	width: 110px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoConfPL {
+	top:275px;
+	margin-left:293px;
+	width: 90px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoConfPL_caisses {
+	top:534px;
+	margin-left:276px;
+	width: 110px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoConfPL_CM {
+	top:381px;
+	margin-left:62px;
+	width: 178px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoTartPC {
+	top:344px;
+	margin-left:318px;
+	width: 172px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+#videoTartPL {
+	top:284px;
+	margin-left:252px;
+	width: 90px;
+	background: transparent url("../images/transparent.png") top left no-repeat;
+}
+/*boutons pour emplacements-clés*/
+#videoEC_rayon {
+	top:170px;
+	margin-left:345px;
+	width: 87px;
+	background: transparent url("../images/Bouton_plan_1.png") top left no-repeat;
+}
+#videoECtart_rayon {
+	top:188px;
+	margin-left:275px;
+	width: 87px;
+	background: transparent url("../images/Bouton_plan_1.png") top left no-repeat;
+}
+#videoEC_promo {
+	cursor: default;
+	top:214px;
+	margin-left:230px;
+	width: 95px;
+	background: transparent url("../images/Bouton_plan_2.png") top left no-repeat;
+}
+#videoECtart_promo {
+	cursor: default;
+	top:294px;
+	margin-left:150px;
+	width: 95px;
+	background: transparent url("../images/Bouton_plan_2.png") top left no-repeat;
+}
+#videoEC_boulangerie {
+	top:290px;
+	margin-left:545px;
+	width: 168px;
+	background: transparent url("../images/Bouton_plan_3.png") top left no-repeat;
+}
+#videoEC_snacking {
+	top:230px;
+	margin-left:455px;
+	width: 128px;
+	background: transparent url("../images/Bouton_plan_4.png") top left no-repeat;
+}
+#videoEC_extravisibilite {
+	top:290px;
+	margin-left:30px;
+	width: 200px;
+	background: transparent url("../images/Bouton_plan_5.png") top left no-repeat;
+}
+#videoEC_caisses {
+	top:470px;
+	margin-left:324px;
+	width: 106px;
+	background: transparent url("../images/Bouton_plan_6.png") top left no-repeat;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARGUMENTAIRE>
+	<pages>
+		<!-- /////////////////// -->
+		<!-- // VERSION #01 S // -->
+		<!-- /////////////////// -->
+		<page nom="accueil_01" modele="index.html" default="default">
+			<data nom='title' val="Comment développer votre CA Boulangerie ?" />
+			<data nom='nommenu' val="Meuble 80 produits" />
+			<!-- <data nom='baseline' val="baseline.html" /> -->
+			<!-- <data nom='refresh' val="3|page_01" /> -->
+			<!-- <data nom="videoALT" val="videoConf1.png" /> -->
+			<data nom="videoALT" val="NUTELLA_V3.png" />
+			<data nom="videoFile" val="NUTELLA_V7_S_1024_SWF.swf" />
+			<menu nom="menuhaut" modele="menuhautvideo.html">
+				<item nom="menuSuiv" url="page_01_01" />
+			</menu>
+		</page>
+		<page nom="page_01_01" modele="intro.html">
+			<data nom='title' val="Quels produits exposer dans le meuble ?" />
+			<data nom='baseline' val="baseline.html" />
+			<data nom='mention' val="* Issus des résultats des tests" />
+			<data nom='background' val="images/slideS-1.png" />
+			<menu nom="menuhaut" modele="menuhaut.html">
+				<item nom="menuPrec" url="accueil_01" />
+				<item nom="menuSuiv" url="page_02_01" />
+			</menu>
+			<animation phases="#0:500|#1:10000|#2:5000" run="true" mode="sequ"> <!-- mode = "pause" ou "sequ" -->
+				<sprite nom="fleche1" image="images/P002_fleche1.png" posX="300px" posY="167px" animate="#1|s:fadeIn|i:800" />
+				<sprite nom="HitParade" image="images/HitParade.png" posX="124px" posY="175px" animate="#1|s:fadeIn|i:800" />
+				<sprite nom="pyramide" image="images/pyramide.png" posX="10px" posY="240px" animate="#1|s:fadeIn|i:800" />
+				<sprite nom="fleche2" image="images/P002_fleche2.png" posX="600px" posY="380px" animate="#2|s:fadeIn|i:800" />
+				<sprite nom="formatExc" image="images/formatDExcellence.png" posX="640px" posY="450px" animate="#2|s:fadeIn|i:800" />
+				<sprite nom="nutella1" image="images/nutella1.png" posX="670px" posY="160px" animate="#2|s:fadeIn|i:1200" />
+				<sprite nom="nutella2" image="images/nutella2.png" posX="742px" posY="210px" animate="#2|s:fadeIn|i:1200" />
+			</animation>
+		</page>
+		<page nom="page_02_01" modele="intro.html">
+			<data nom='title' val="Qui fait quoi ?" />
+			<data nom='baseline' val="baseline.html" />
+			<data nom='background' val="images/slideS-2.png" />
+			<menu nom="menuhaut" modele="menuhaut.html">
+				<item nom="menuPrec" url="page_01_01" />
+				<item nom="menuSuiv" url="page_03_01" />
+			</menu>
+			<animation phases="#0:500|#1:2500|#2:7000|#3:2500|#4:2500|#5:5000" run="true" mode="sequ">
+				<sprite nom="rond1-1" image="images/ronds_1.png" posX="70px" posY="180px" animate="#1|s:fadeIn|i:800|#2|s:fadeOut|i:300" zindex="101" />
+				<sprite nom="rond1-2" image="images/ronds_1.png" posX="680px" posY="180px" animate="#1|s:fadeIn|i:800|#2|s:fadeOut|i:300" zindex="102" />
+				<sprite nom="rond1-3" image="images/ronds_2.png" posX="70px" posY="180px" animate="#2|s:fadeIn|i:800|#4|s:fadeOut|i:800" zindex="103" />
+				<sprite nom="masque1" image="images/masqueS-1.png" posX="100px" posY="-10px" animate="#3|s:fadeIn|i:800|#4|s:fadeOut|i:500" zindex="99" />
+				<sprite nom="argu1-1" image="images/P3_argu1.png" posX="680px" posY="260px" animate="#3|s:fadeIn|i:800|#4|s:fadeOut|i:300" zindex="104" />
+				<sprite nom="rond1-4" image="images/ronds_3.png" posX="680px" posY="180px" animate="#4|s:fadeIn|i:800" zindex="105" />
+				<sprite nom="masque2" image="images/masqueS-2.png" posX="100px" posY="-15px" animate="#5|s:fadeIn|i:800" zindex="100" />
+				<sprite nom="argu1-2" image="images/P3_argu2.png" posX="10px" posY="260px" animate="#5|s:fadeIn|i:800" zindex="106" />
+			</animation>
+		</page>
+		<page nom="page_03_01" modele="intro.html">
+			<data nom='title' val="Quelles animations pour la zone Boulangerie ?" />
+			<data nom='baseline' val="baseline.html" />
+			<data nom='background' val="images/slideS-3.png" />
+			<menu nom="menuhaut" modele="menuhaut.html">
+				<item nom="menuPrec" url="page_02_01" />
+				<item nom="menuSuiv" url="page_04_01" />
+			</menu>
+			<animation phases="#0:2000|#1:8000|#2:12000|#3:5000" run="true" mode="sequ">
+				<sprite nom="argu-1" image="images/p4-1.png" posX="25px" posY="130px" animate="#1|s:fadeIn|i:800" zindex="100" />
+				<sprite nom="argu-2" image="images/p4-2.png" posX="25px" posY="130px" animate="#2|s:fadeIn|i:800" zindex="101" />
+				<sprite nom="argu-3" image="images/p4-3.png" posX="25px" posY="130px" animate="#2|s:fadeIn|i:800" zindex="103" />
+				<sprite nom="argu-4" image="images/p4-4.png" posX="25px" posY="130px" animate="#3|s:fadeIn|i:800" zindex="104" />
+			</animation>
+		</page>
+		<page nom="page_04_01" modele="intro.html">
+			<data nom='title' val="Les 5 raisons d'adopter le meuble" />
+			<data nom='baseline' val="baseline.html" />
+			<data nom='background' val="images/slideS-4.png" />
+			<data nom='mention' val="* résultats issus des tests" />
+			<menu nom="menuhaut" modele="menuhaut.html">
+				<item nom="menuPrec" url="page_03_01" />
+				<item nom="menuSuiv" url="page_05_01" />
+			</menu>
+			<animation phases="#0:500|#1:6000|#2:6000|#3:6000|#4:6000|#5:5000" run="true" mode="sequ">
+				<sprite nom="oval-1" image="images/oval1-1.png" posX="42px" posY="130px" animate="#1|s:fadeIn|i:800" zindex="100" />
+				<sprite nom="oval-2" image="images/oval1-2.png" posX="42px" posY="130px" animate="#2|s:fadeIn|i:800" zindex="101" />
+				<sprite nom="oval-3" image="images/oval1-3.png" posX="42px" posY="130px" animate="#3|s:fadeIn|i:800" zindex="103" />
+				<sprite nom="oval-4" image="images/oval1-4.png" posX="42px" posY="130px" animate="#4|s:fadeIn|i:800" zindex="104" />
+				<sprite nom="oval-5" image="images/oval1-5.png" posX="52px" posY="150px" animate="#5|s:fadeIn|i:800" zindex="105" />
+			</animation>
+		</page>
+		<page nom="page_05_01" modele="intro.html">
+			<data nom='title' val="Le meuble : fiche technique" />
+			<data nom='baseline' val="baseline.html" />
+			<data nom='background' val="images/slideS-5.png" />
+			<menu nom="menuhaut" modele="menuhaut.html">
+				<item nom="menuPrec" url="page_04_01" />
+				<item nom="menuSuiv" url="accueil_01" />
+			</menu>
+		</page>
+	</pages>
+
+</ARGUMENTAIRE>

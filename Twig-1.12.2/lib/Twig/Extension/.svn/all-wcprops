@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension
+END
+Debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Debug.php
+END
+Core.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Core.php
+END
+Staging.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Staging.php
+END
+StringLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/StringLoader.php
+END
+Sandbox.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Sandbox.php
+END
+Escaper.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Escaper.php
+END
+Optimizer.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/aequarender/!svn/ver/2/trunk/Twig-1.12.2/lib/Twig/Extension/Optimizer.php
+END

@@ -1,0 +1,11 @@
+{% include "entete.html" %}
+
+<body{% if page.data.bodyBackground is defined %} class="fill-it" style="background-image:url('{{ page.go }}{{ page.data.bodyBackground }}');"{% endif %}>
+{% block body %}
+{% endblock body %}
+
+{% block javascripts %}
+{% include "javascripts.html" %}
+{% endblock javascripts %}
+</body>
+</html>

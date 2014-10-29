@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARGUMENTAIRE>
+	<pages>
+		<!-- MENU PRINCIPAL -->
+		<page nom="accueil" modele="index.html" default="default">
+			<data nom='menuhaut' val="ok" />
+			<data nom='title' val="Ferrero - Parcours" />
+			<data nom='imagefond' val="BIG_accueil" />
+			<animation phases="#0:500|#1:6000|#2:6000|#3:6000|#4:6000|#5:5000" run="true" mode="sequ">
+				<sprite nom="oval1" image="images/onglet01.png" posX="42px" posY="130px" animate="#1|s:fadeIn|i:800" zindex="5100" />
+				<sprite nom="oval2" image="images/onglet02.png" posX="42px" posY="130px" animate="#2|s:fadeIn|i:800" zindex="5101" />
+				<sprite nom="oval3" image="images/onglet03.png" posX="42px" posY="130px" animate="#3|s:fadeIn|i:800" zindex="5103" />
+				<sprite nom="oval4" image="images/onglet04.png" posX="42px" posY="130px" animate="#4|s:fadeIn|i:800" zindex="5104" />
+				<sprite nom="oval5" image="images/onglet05.png" posX="52px" posY="150px" animate="#5|s:fadeIn|i:800" zindex="5105" />
+			</animation>
+		</page>
+		<page nom="conf_01" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='title' val="Ferrero - Confiserie Chocolaterie" />
+			<data nom='refresh' val="20|conf_03a" />
+			<data nom='imagefond' val="BIG_confiserieAN1" />
+			<data nom='menudroiteConf' val="ok" />
+		</page>
+		<page nom="tabl_01" modele="index.html">
+			<data nom='menuhaut' val='tabl_01' />
+			<data nom='title' val="Ferrero - tablettes" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="TABLETTE-GOUTER-1.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-2.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-3.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-4.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-5.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-6.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-7.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-8.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN3" />
+		</page>
+		<page nom="gout_01" modele="index.html">
+			<data nom='menuhaut' val="gout_01" />
+			<data nom='title' val="Ferrero - Goûters" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="TABLETTE-GOUTER-9.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-10.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-11.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-12.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-13.png" time="5000"></diapo>
+				<diapo image="TABLETTE-GOUTER-14.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN4" />
+		</page>
+		<page nom="tart_01" modele="index.html">
+			<data nom='menuhaut' val="tart_01" />
+			<data nom='title' val="Ferrero - Tartinables" />
+			<data nom='refresh' val="20|tart_03a" />
+			<data nom='imagefond' val="BIG_confiserieAN5" />
+			<data nom='menudroiteTart' val="ok" />
+		</page>
+		<page nom="cais_01" modele="index.html">
+			<data nom='menuhaut' val="cais_01" />
+			<data nom='title' val="Ferrero - Caisses" />
+			<data nom='imagefond' val="BIG_confiserieAN6" />
+		</page>
+
+		<!-- CONFISERIE DE CHOCOLAT : DEBUT -->
+		<!-- parcours court : intro -->
+		<page nom="conf_01a" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Pour maintenant" />
+			<data nom='refresh' val="6|conf_01b" />
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom="videoALT" val="videoConf1.png" />
+			<data nom="videoSWF" val="videoConf1.swf" />
+		</page>
+		<page nom="conf_01b" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Pour maintenant" />
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+		</page>
+		<!-- CONFISERIE PC SNACKING : intro -->
+		<page nom="conf_01c" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-01.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1f' val="ok" />
+		</page>
+		<!-- CONFISERIE PC SNACKING : chiffres clés -->
+		<page nom="conf_01d" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-02.png" time="5000"></diapo>
+				<diapo image="diapo SNACKING-03.png" time="5000"></diapo>
+				<diapo image="diapo SNACKING-04.png" time="5000"></diapo>
+				<diapo image="diapo SNACKING-05.png" time="5000"></diapo>
+				<diapo image="diapo SNACKING-06.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1f' val="ok" />
+		</page>
+		<!-- CONFISERIE PC SNACKING : gamme Kinder -->
+		<page nom="conf_01e" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-07.png" time="5000"></diapo>
+				<diapo image="diapo SNACKING-08.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1f' val="ok" />
+		</page>
+		<!-- CONFISERIE PC SNACKING : merchandising -->
+		<page nom="conf_01f" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-09.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1f' val="ok" />
+			<data nom='menuInPoPsnack1' val="ok" />
+		</page>
+		<page nom="conf_01g" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-10.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1g' val="ok" />
+			<data nom='menuInPoPsnack2' val="ok" />
+		</page>
+		<page nom="conf_01h" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-11.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1h' val="ok" />
+			<data nom='menuInPoPsnack3' val="ok" />
+		</page>
+		<page nom="conf_01i" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_01a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Snacking" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo SNACKING-12.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN21" />
+			<data nom='menuvideoConf1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf1.png" />
+			<data nom='menuBasConf1i' val="ok" />
+			<data nom='menuInPoPsnack4' val="ok" />
+		</page>
+		<!-- parcours long : intro -->
+		<page nom="conf_02a" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Pour chez moi" />
+			<data nom='refresh' val="12|conf_02b" />
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom="videoALT" val="videoConf2.png" />
+			<data nom="videoSWF" val="videoConf2.swf" />
+		</page>
+		<page nom="conf_02b" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Pour chez moi" />
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+		</page>
+		<!-- CONFISERIE PL RAYON : intro -->
+		<page nom="conf_02c" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Rayon" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-CONF-RAYON-01.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+			<data nom='menuBasConf2' val="ok" />
+		</page>
+		<!-- CONFISERIE PL RAYON : chiffres clés -->
+		<page nom="conf_02d" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Chiffres clés" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-CONF-RAYON-02.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-03.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-04.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-05.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+			<data nom='menuBasConf2' val="ok" />
+		</page>
+		<!-- CONFISERIE PL RAYON : merchandising -->
+		<page nom="conf_02e" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Merchandising" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-CONF-RAYON-06.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-07.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-08.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-09.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-10.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-11.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-12.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-13.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-14.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-15.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-16.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-17.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-18.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-19.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-20.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-21.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-22.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-23.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-24.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-25.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+			<data nom='menuBasConf2' val="ok" />
+			<!-- <data nom='menuInPoPmerch1' val="ok" /> -->
+		</page>
+		<!-- CONFISERIE PL RAYON : boîte à outils -->
+		<page nom="conf_02f" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Boîte à outils" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-CONF-RAYON-26.png" time="5000"></diapo>
+				<diapo image="diapo-CONF-RAYON-27.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+			<data nom='menuBasConf2' val="ok" />
+		</page>
+		<!-- CONFISERIE PL CROSSMERCH : intro -->
+		<page nom="conf_02g" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_02a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Cross Merch" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo CROSS MERCH-01.png" time="5000"></diapo>
+				<diapo image="diapo CROSS MERCH-02.png" time="5000"></diapo>
+				<diapo image="diapo CROSS MERCH-03.png" time="5000"></diapo>
+				<diapo image="diapo CROSS MERCH-04.png" time="5000"></diapo>
+				<diapo image="diapo CROSS MERCH-05.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_confiserieAN22" />
+			<data nom='menuvideoConf2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoConf2.png" />
+		</page>
+		<!-- CONFISERIE EMPLACEMENTS-CLES : intro -->
+		<page nom="conf_03a" modele="index.html">
+			<data nom='menuhaut' val='conf_01' />
+			<data nom='menudroiteConf' val="conf_03a" />
+			<data nom='title' val="Ferrero - Confiserie de chocolat - Emplacements-clés" />
+			<data nom='imagefond' val="BIG_confiserieAN1" />
+			<data nom='menuvideoConf3' val="ok" />
+			<data nom='tempvideo' val="1000" />
+		</page>
+		<!-- CONFISERIE DE CHOCOLAT : FIN -->
+
+
+
+
+		<!-- TARTINABLES : DEBUT -->
+		<!-- parcours court : intro -->
+		<page nom="tart_01a" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_01a" />
+			<data nom='title' val="Ferrero - Tartinables - Pour ce soir" />
+			<data nom='refresh' val="6|tart_01b" />
+			<data nom='imagefond' val="BIG_tartinables11" />
+			<data nom="videoALT" val="videoTart1.png" />
+			<data nom='videoSWF' val="videoTart1.swf" />
+		</page>
+		<page nom="tart_01b" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_01a" />
+			<data nom='title' val="Ferrero - Tartinables - Pour ce soir" />
+			<data nom='imagefond' val="BIG_tartinables11" />
+			<data nom='menuvideoTart1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart1.png" />
+		</page>
+		<!-- parcours long : intro -->
+		<page nom="tart_02a" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Pour chez moi" />
+			<data nom='refresh' val="10|tart_02b" />
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom="videoALT" val="videoTart2.png" />
+			<data nom='videoSWF' val="videoTart2.swf" />
+		</page>
+		<page nom="tart_02b" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Pour chez moi" />
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom='menuvideoTart2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart2.png" />
+		</page>
+		<!-- TARTINABLES PC : intro -->
+		<page nom="tart_01c" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_01a" />
+			<data nom='title' val="Ferrero - Tartinables - Rayon" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PC-01.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables11" />
+			<data nom='menuvideoTart1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart1.png" />
+			<data nom='menuBasTart1' val="ok" />
+		</page>
+		<!-- TARTINABLES PC : chiffres clés -->
+		<page nom="tart_01d" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_01a" />
+			<data nom='title' val="Ferrero - Tartinables - Chiffres clés" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PC-02.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PC-03.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables11" />
+			<data nom='menuvideoTart1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart1.png" />
+			<data nom='menuBasTart1' val="ok" />
+		</page>
+		<!-- TARTINABLES PC : solution mobilier -->
+		<page nom="tart_01e" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_01a" />
+			<data nom='title' val="Ferrero - Tartinables - Solution mobilier" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PC-04.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PC-05.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PC-06.png" time="5000"></diapo>
+				<!-- <diapo image="diapo-TARTINABLE-PC-07.png" time="5000"></diapo> -->
+			</data>
+			<data nom='imagefond' val="BIG_tartinables11" />
+			<data nom='menuvideoTart1' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart1.png" />
+			<data nom='menuBasTart1' val="ok" />
+		</page>
+		<!-- TARTINABLES PL : intro -->
+		<page nom="tart_02c" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Rayon" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PL2-01.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom='menuvideoTart2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart2.png" />
+			<data nom='menuBasTart2' val="ok" />
+		</page>
+		<!-- TARTINABLES PL : chiffres clés -->
+		<page nom="tart_02d" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Chiffres clés" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PL2-02.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-03.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-04.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-05.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom='menuvideoTart2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart2.png" />
+			<data nom='menuBasTart2' val="ok" />
+		</page>
+		<!-- TARTINABLES PL : gamme Nutella -->
+		<page nom="tart_02e" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Gamme Nutella" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PL2-06.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-07.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-08.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-09.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-10.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-11.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-12.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-13.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom='menuvideoTart2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart2.png" />
+			<data nom='menuBasTart2' val="ok" />
+		</page>
+		<!-- TARTINABLES PL : merchandising -->
+		<page nom="tart_02f" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_02a" />
+			<data nom='title' val="Ferrero - Tartinables - Merchandising" />
+			<data nom="diaporama" defaultime="3000" auto="false" endstop="true" stopzone="true" fadespeed="400" reaction="click">
+				<diapo image="diapo-TARTINABLE-PL2-14.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-15.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-16.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-17.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-18.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-19.png" time="5000"></diapo>
+				<diapo image="diapo-TARTINABLE-PL2-20.png" time="5000"></diapo>
+			</data>
+			<data nom='imagefond' val="BIG_tartinables12" />
+			<data nom='menuvideoTart2' val="ok" />
+			<data nom='tempvideo' val="1000" />
+			<data nom='fixvideo' val="videoTart2.png" />
+			<data nom='menuBasTart2' val="ok" />
+		</page>
+		<!-- TARTINABLES EMPLACEMENTS-CLES : intro -->
+		<page nom="tart_03a" modele="index.html">
+			<data nom='menuhaut' val='tart_01' />
+			<data nom='menudroiteTart' val="tart_03a" />
+			<data nom='title' val="Ferrero - tartinables - Emplacements-clés" />
+			<data nom='imagefond' val="BIG_confiserieAN5" />
+			<data nom='menuvideoTart3' val="ok" />
+			<data nom='tempvideo' val="1000" />
+		</page>
+		<!-- TARTINABLES : FIN -->
+	</pages>
+
+	<!-- ///// -->
+	<!-- MENUS -->
+	<!-- ///// -->
+	<menus>
+		<!-- menu haut -->
+		<menu nom="menuhaut" modele="menuhaut.html">
+			<item nom="Confiserie chocolaterie" on="accueil" off="conf_01" />
+			<item nom="Tablettes" on="accueil" off="tabl_01" />
+			<item nom="Goûters" on="accueil" off="gout_01" />
+			<item nom="Tartinables" on="accueil" off="tart_01" />
+			<item nom="Caisses" on="accueil" off="cais_01" />
+		</menu>
+		<!-- menu droite -->
+		<menu nom="menudroiteConf" modele="menudroite.html">
+			<item nom="PourMaintenant" url="conf_01a" />
+			<item nom="PourChezMoi" url="conf_02a" />
+			<item nom="EmplacementsCles" url="conf_03a" />
+		</menu>
+		<menu nom="menudroiteTart" modele="menudroite.html">
+			<item nom="PourCesoir" url="tart_01a" />
+			<item nom="PourChezMoi" url="tart_02a" />
+			<item nom="EmplacementsCles" url="tart_03a" />
+		</menu>
+		<!-- menus sur vidéos -->
+		<menu nom="menuvideoConf1">
+			<item nom="videoConfPC_snacking" url="conf_01c" />
+			<item nom="videoConfPC_caisses" url="cais_01" />
+		</menu>
+		<menu nom="menuvideoConf2">
+			<item nom="videoConfPL" url="conf_02c" />
+			<item nom="videoConfPL_CM" url="conf_02g" />
+			<item nom="videoConfPL_caisses" url="cais_01" />
+		</menu>
+		<menu nom="menuvideoConf3">
+			<item nom="videoEC_rayon" url="conf_02c" />
+			<item nom="videoEC_snacking" url="conf_01c" />
+			<item nom="videoEC_promo" url="conf_03a" />
+			<item nom="videoEC_extravisibilite" url="conf_02g" />
+			<item nom="videoEC_caisses" url="cais_01" />
+		</menu>
+		<menu nom="menuvideoTart1">
+			<item nom="videoTartPC" url="tart_01c" />
+		</menu>
+		<menu nom="menuvideoTart2">
+			<item nom="videoTartPL" url="tart_02c" />
+		</menu>
+		<menu nom="menuvideoTart3">
+			<item nom="videoECtart_rayon" url="tart_02c" />
+			<item nom="videoECtart_promo" url="tart_03a" />
+			<item nom="videoEC_boulangerie" url="tart_01c" />
+		</menu>
+		<!-- menus-onglest sur pop-in -->
+		<menu nom="menuBasConf1f">
+			<item nom="onglet1" url="conf_01d" />
+			<item nom="onglet5" url="conf_01e" />
+			<item nom="onglet3" url="conf_01f" />
+		</menu>
+		<menu nom="menuBasConf1g">
+			<item nom="onglet1" url="conf_01d" />
+			<item nom="onglet5" url="conf_01e" />
+			<item nom="onglet3" url="conf_01g" />
+		</menu>
+		<menu nom="menuBasConf1h">
+			<item nom="onglet1" url="conf_01d" />
+			<item nom="onglet5" url="conf_01e" />
+			<item nom="onglet3" url="conf_01h" />
+		</menu>
+		<menu nom="menuBasConf1i">
+			<item nom="onglet1" url="conf_01d" />
+			<item nom="onglet5" url="conf_01e" />
+			<item nom="onglet3" url="conf_01i" />
+		</menu>
+
+		<menu nom="menuBasConf2">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+
+		<menu nom="menuBasConf2e_05">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_05a">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_05" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_05b">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_05" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_05c">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_05" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+
+		<menu nom="menuBasConf2e_10">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_10a">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_10" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_10b">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_10" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_10c">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_10" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+
+		<menu nom="menuBasConf2e_15">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_15b">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_15" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+		<menu nom="menuBasConf2e_15c">
+			<item nom="onglet1" url="conf_02d" />
+			<item nom="onglet3" url="conf_02e_15" />
+			<item nom="onglet4" url="conf_02f" />
+		</menu>
+
+		<menu nom="menuBasTart1">
+			<item nom="onglet1" url="tart_01d" />
+			<item nom="onglet2" url="tart_01e" />
+		</menu>
+		<menu nom="menuBasTart2">
+			<item nom="onglet1" url="tart_02d" />
+			<item nom="onglet6" url="tart_02e" />
+			<item nom="onglet3" url="tart_02f" />
+		</menu>
+		<!-- Zones cliquables sur pop-in -->
+		<!-- MERCHANDISING -->
+		<menu nom="menuInPoPmerch1">
+			<item nom="trizone2" url="conf_02e_05" />
+			<item nom="trizone2" url="conf_02e_10" />
+			<item nom="trizone2" url="conf_02e_15" />
+		</menu>
+		<menu nom="menuInPoPmerch2_05">
+			<item nom="trizone3" url="conf_02e_05a" />
+			<item nom="trizone3" url="conf_02e_05b" />
+			<item nom="trizone3" url="conf_02e_05c" />
+		</menu>
+		<menu nom="menuInPoPmerch2_10">
+			<item nom="trizone3" url="conf_02e_10a" />
+			<item nom="trizone3" url="conf_02e_10b" />
+			<item nom="trizone3" url="conf_02e_10c" />
+		</menu>
+		<menu nom="menuInPoPmerch2_15">
+			<item nom="trizone3" url="no_url" />
+			<item nom="trizone3" url="conf_02e_15b" />
+			<item nom="trizone3" url="conf_02e_15c" />
+		</menu>
+
+		<!-- SNACKING -->
+		<menu nom="menuInPoPsnack1">
+			<item nom="trizone" url="conf_01g" />
+			<item nom="trizone" url="conf_01h" />
+			<item nom="trizone" url="conf_01i" />
+		</menu>
+		<menu nom="menuInPoPsnack2">
+			<item nom="allzone" url="conf_01f" />
+		</menu>
+		<menu nom="menuInPoPsnack3">
+			<item nom="allzone" url="conf_01f" />
+		</menu>
+		<menu nom="menuInPoPsnack4">
+			<item nom="allzone" url="conf_01f" />
+		</menu>
+	</menus>
+</ARGUMENTAIRE>

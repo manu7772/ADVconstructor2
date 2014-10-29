@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	{% if page.refresh is iterable %}
+	<meta http-equiv="refresh" content="{{ page.refresh.sec }};URL={{ page.go }}{{ pages[page.refresh.redir].url }}">
+	{% endif %}
+	<link rel="icon" type="image/x-icon" href="{{ page.go }}favicon.ico" />

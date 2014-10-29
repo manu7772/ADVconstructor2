@@ -1,0 +1,10 @@
+<div id='menuIE'>
+	{% if items.menuHome is defined %}
+	<div class="retourTop"><a id="retourButton" href="{{ page.go }}index.html" class="retour"></a></div>
+	{% elseif items.menuPrec is defined %}
+	<div class="fleche-gauche"><a id="fleche-gauche" href="{{ page.go }}{{ pages[items.menuPrec.url].url }}" title="{{ pages[items.menuPrec.url].data.title }}"></a></div>
+	{% endif %}
+	{% if items.menuSuiv is defined %}
+	<div class="fleche-droite"><a id="fleche-droite" href="{{ page.go }}{{ pages[items.menuSuiv.url].url }}" title="{{ pages[items.menuSuiv.url].data.title }}"></a></div>
+	{% endif %}
+</div>

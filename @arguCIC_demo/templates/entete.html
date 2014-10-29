@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	{% if page.refresh is iterable %}
+	<meta http-equiv="refresh" content="{{ page.refresh.sec }};URL={{ page.go }}{{ pages[page.refresh.redir].url }}">
+	{% endif %}
+	<link rel="icon" type="image/x-icon" href="{{ page.go }}favicon.ico" />
+	<title>{{ page.data.title }}</title>
+	{% include "styles.html" %}
+</head>

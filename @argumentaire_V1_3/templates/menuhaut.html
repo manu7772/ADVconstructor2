@@ -1,0 +1,12 @@
+		<ul id="menuHaut">
+		{% for item in menus.menuhaut.items %}
+			{% if ((item.off == page.nom) or (item.off == page.data.menuhaut)) %}
+			{% set URL = pages[item.on].url  %}
+			{% set int = "on" %}
+			{% else %}
+			{% set URL = pages[item.off].url %}
+			{% set int = "off reactif" %}
+			{% endif %}
+			<li class="{{ int }}"><a href="{{ page.go }}{{ URL }}"></a></li>
+		{% endfor %}
+		</ul>

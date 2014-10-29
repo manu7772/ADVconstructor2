@@ -1,0 +1,10 @@
+	<script src="{{ page.go }}js/jquery-1.11.1.min.js"></script>
+	<script src="{{ page.go }}js/bootstrap.min.js"></script>
+	<script src="{{ page.go }}js/ferrero-JStools.js"></script>
+	{% if page.data.videoFile is defined %}
+	<!-- <script type="text/javascript" src="{{ page.go }}js/kaltura.js"></script> -->
+	<script type="text/javascript" src="{{ page.go }}js/swfobject.js"></script>
+	<script type="text/javascript">
+		swfobject.registerObject("myFlashContent", "9.0.0", "expressInstall.swf");
+	</script>
+	{% endif %}

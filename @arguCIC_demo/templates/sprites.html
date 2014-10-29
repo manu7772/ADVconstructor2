@@ -1,0 +1,6 @@
+{% if page.animation.sprite is defined %}
+	<span id="sprite-phases-description" style="display:none;" data-run="{{ page.animation.run }}" data-mode="{{ page.animation.mode }}" data-phases="{{ page.animation.phases.string }}"></span>
+	{% for sp in page.animation.sprite %}
+	<div id="{{ sp.nom }}" class="sprite{% for key,ph in sp.phases %} phase-{{ key }}{% endfor %}" data-effect="{{ sp.animate }}" style="background:transparent url('{{ sp.image }}') center center no-repeat;top:{{ sp.posY }};margin-left:{{ sp.posX }};width:{{ sp.tailleX }}px;height:{{ sp.tailleY }}px;z-index:{{ sp.zindex }};"></div>
+	{% endfor %}
+{% endif %}

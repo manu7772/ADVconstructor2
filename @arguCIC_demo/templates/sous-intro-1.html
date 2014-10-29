@@ -1,0 +1,21 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE : {{ page.nom }} -->
+	<div id="BIG" class="fadein fill" data-effect="0|200" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
+		<div class="separ48"></div>
+		<div style="margin:0px auto;"><img src="{{ page.go }}{{ page.data.titre }}" /></div>
+		<div class="separ180"></div>
+		<div class="separ180"></div>
+		{% if page.menu.sommaire2 is defined %}
+		<ul class="sommaire2">
+			{% for item in page.menu.sommaire2.item %}
+			<li><a href="{{ page.go }}{{ pages[item.url].url }}" class="bouton02 fadein" data-effect="{{ item['data-effect'] }}" id="{{ item.id }}" title="{{ item.title }}"></a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+	{% include "navigator.html" %}
+	{% include "sprites.html" %}
+	{% include "mentions.html" %}
+
+{% endblock body %}

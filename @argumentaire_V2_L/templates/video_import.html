@@ -1,0 +1,31 @@
+{% if page.data.videoFile is defined %}
+{% set vidX = '1024' %}
+{% set vidY = '576' %}
+<!-- http://www.alsacreations.com/article/lire/1125-introduction-balise-video-html5-mp4-h264-webm-ogg-theora.html -->
+<!-- Ici import de la vidéo -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{{ vidX }}px" height="{{ vidY }}px" id="myFlashContent">
+	<param name="movie" value="{{ page.go }}video/{{ page.data.videoFile }}" />
+	<param name="bgcolor" value="#000000">
+	<param name="quality" value="high">
+	<param name="loop" value="false">
+	<param name="menu" value="true">
+	<!--[if !IE]>-->
+	<object type="application/x-shockwave-flash" data="{{ page.go }}video/{{ page.data.videoFile }}" width="{{ vidX }}px" height="{{ vidY }}px">
+		<param name="bgcolor" value="#000000">
+		<param name="quality" value="high">
+		<param name="loop" value="false">
+		<param name="menu" value="true">
+	<!--<![endif]-->
+		<img src="{{ page.go }}images/{{ page.data.videoALT }}" style="width:{{ vidX }}px;height:{{ vidY }}px;" />
+	<!--[if !IE]>-->
+	</object>
+	<!--<![endif]-->
+</object>
+{% endif %}
+{% if page.data.fixvideo is defined %}
+<div id="fixvideobloc">
+	<img src="{{ page.go }}images/{{ page.data.fixvideo }}" style="width:{{ vidX }}px;height:{{ vidY }}px;" />
+</div>
+{% endif %}
+
+
