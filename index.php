@@ -95,6 +95,11 @@ function creationADV() {
 		}
 
 		if($OK) {
+			// création du dossier ADVgenerated si non existant
+			if(!file_exists(GENERATEFOLDER)) {
+				if(@mkdir(GENERATEFOLDER, 0777)) echo('<p class="ok">Création du dossier /'.GENERATEFOLDER.'</p>');
+					else echo('<p class="error">Erreur à la création du dossier /'.GENERATEFOLDER.'</p>');
+			}
 			// Préparation des dossiers
 			$suivi = "";
 			$dirs = array();
