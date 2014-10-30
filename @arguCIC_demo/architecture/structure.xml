@@ -36,7 +36,7 @@
 				<item nom="accueil03" url="accueil_01" data-effect="400|400" id="bout01011-11" title="" />
 				<item nom="accueil04" url="accueil_01" data-effect="500|400" id="bout01011-13" title="" />
 				<item nom="accueil05" url="accueil_01" data-effect="600|400" id="bout01011-14" title="" />
-				<item nom="CP" url="page_CP_01" data-effect="700|400" id="bout01011-15" title="CP" />
+				<item nom="CP" url="page_CP_choix" data-effect="700|400" id="bout01011-15" title="CP" />
 				<item nom="accueil07" url="accueil_01" data-effect="800|400" id="bout01011-16" title="" />
 				<item nom="accueil08" url="accueil_01" data-effect="900|400" id="bout01011-17" title="" />
 				<item nom="accueil09" url="accueil_01" data-effect="1000|400" id="bout01011-18" title="" />
@@ -55,8 +55,26 @@
 		<!-- // PAGES         // -->
 		<!-- /////////////////// -->
 
+		<!-- CP:choix -->
+		<page nom="page_CP_choix" modele="sous-intro-1.html">
+			<data nom='title' val="CP" />
+			<data nom="fulldoc" val="3" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Patrimonial" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CP_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CP_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CP_04" data-effect="600|800" />
+			</menu>
+		</page>
 		<!-- CP:01 -->
-		<page nom="page_CP_01" modele="sous-intro-1.html">
+		<page nom="page_CP_01" modele="sous-intro-2.html">
 			<data nom='title' val="CP" />
 			<data nom="fulldoc" val="3" />
 			<data nom='background' val="images/p4_fond.png" />
@@ -71,12 +89,64 @@
 				<item nom="accueil01" url="page_CP_02" data-effect="500|400" id="bout01022-06" title="" />
 			</menu>
 		</page>
+		<!-- CP:exemple visu pleine page -->
+		<!-- <page nom="exemple visu pleine page" modele="page-tableau.html"> -->
+			<!-- <data nom='title' val="CP - Tableau1" /> -->
+			<!-- <data nom="fulldoc" val="3" /> -->
+			<!-- <data nom='bodyBackground' val="images/fond.png" /> -->
+			<!-- <data nom="visuPleinePage" val="images/P4_textes.png" /> -->
+			<!-- <menu nom="navigator" modele="navigator.html"> -->
+				<!-- <item nom="histback" val="-1" /> -->
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<!-- <item nom="home" url="sommaire" /> -->
+			<!-- </menu> -->
+		<!-- </page> -->
 		<!-- CP:02 -->
-		<page nom="page_CP_02" modele="page-tableau.html">
+		<page nom="page_CP_02" modele="page-templates.html">
 			<data nom='title' val="CP - Tableau1" />
 			<data nom="fulldoc" val="3" />
 			<data nom='bodyBackground' val="images/fond.png" />
-			<data nom="visuPleinePage" val="images/P4_textes.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="bout01011-15" />
+			<templates>
+				<html fichier="tableau_CP_pave2.html" />
+				<html fichier="tableau_CP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CP_03" modele="page-templates.html">
+			<data nom='title' val="CP - Tableau1" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="bout01011-15" />
+			<templates>
+				<html fichier="tableau_CP_pave3.html" />
+				<html fichier="tableau_CP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CP_04" modele="page-templates.html">
+			<data nom='title' val="CP - Tableau1" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="bout01011-15" />
+			<templates>
+				<html fichier="tableau_CP_pave1.html" />
+				<html fichier="tableau_CP_pave4.html" />
+			</templates>
 			<menu nom="navigator" modele="navigator.html">
 				<item nom="histback" val="-1" />
 				<!-- <item nom="menuSuiv" url="????" /> -->

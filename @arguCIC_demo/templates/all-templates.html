@@ -1,0 +1,3 @@
+{% if page.templates is defined %}
+{% for html in page.templates %}{% include html.fichier %}{% endfor %}
+{% endif %}

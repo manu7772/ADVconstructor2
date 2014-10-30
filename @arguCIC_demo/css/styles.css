@@ -1,5 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+/*@import url(http://fonts.googleapis.com/css?family=Krona+One);*/
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+@charset "utf-8";
+/* CSS Document */
+
 * {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	/*font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;*/
 	/*font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;*/
 	text-decoration:none;
 	margin:0px 0px 0px 0px;
@@ -57,6 +65,8 @@ div#test {
 	clear: both;
 	display: block;
 }
+.separ16 { height: 16px; }
+.separ24 { height: 24px; }
 .separ48 { height: 48px; }
 .separ180 { height: 180px; }
 
@@ -180,13 +190,16 @@ div.ctrlsprite {
  /* page_01_01_1            */
 /***************************/
 
-ul.sommaire1, ul.sommaire2 {
+ul.sommaire1, ul.sommaire2, ul.choix {
 	list-style-type: none;
 	display: block;
 	margin: 0px auto;
 	width: 650px;
 }
 ul.sommaire2 {
+	width: 100%;
+}
+ul.choix {
 	width: 100%;
 }
 ul.sommaire1 >li {
@@ -197,17 +210,20 @@ ul.sommaire2 >li {
 	display: inline-block;
 	width: 232px;
 }
+ul.choix >li {
+	display: inline-block;
+	width: 206px;
+}
 
-a.bouton01 {
+.bouton01 {
 	display: block;
 	width: 126px;
 	height: 54px;
 }
-li:hover >a.bouton01 {
+li:hover >.bouton01 {
 	background-position: 0px -54px;
 }
-
-a.bouton02 {
+.bouton02 {
 	display: block;
 	width: 232px;
 	height: 68px;
@@ -216,65 +232,214 @@ li:hover >a.bouton02 {
 	background-position: 0px -68px;
 }
 
-a#bout01011-05 {
+.boutonChoix1, .boutonChoix2, .boutonChoix3 {
+	display: block;
+	width: 206px;
+	height: 251px;
+	background: transparent url(../images/iconChoix_1.png) 0px 0px no-repeat;
+}
+.boutonChoix2 {
+	background-image: url(../images/iconChoix_2.png);
+}
+.boutonChoix3 {
+	background-image: url(../images/iconChoix_3.png);
+}
+
+.forh1 {
+	display: inline-block;
+	/*float:left;*/
+	margin:0px 12px -5px 80px;
+}
+
+#bout01011-05 {
 	background: transparent url('../images/p3_boutons_05.png') 0px 0px no-repeat;
 }
-a#bout01011-07 {
+#bout01011-07 {
 	background: transparent url('../images/p3_boutons_07.png') 0px 0px no-repeat;
 }
-a#bout01011-09 {
+#bout01011-09 {
 	background: transparent url('../images/p3_boutons_09.png') 0px 0px no-repeat;
 }
-a#bout01011-11 {
+#bout01011-11 {
 	background: transparent url('../images/p3_boutons_11.png') 0px 0px no-repeat;
 }
-a#bout01011-13 {
+#bout01011-13 {
 	background: transparent url('../images/p3_boutons_13.png') 0px 0px no-repeat;
 }
-a#bout01011-14 {
+#bout01011-14 {
 	background: transparent url('../images/p3_boutons_14.png') 0px 0px no-repeat;
 }
-a#bout01011-15 {
+#bout01011-15 {
 	background: transparent url('../images/p3_boutons_15.png') 0px 0px no-repeat;
 }
-a#bout01011-16 {
+#bout01011-16 {
 	background: transparent url('../images/p3_boutons_16.png') 0px 0px no-repeat;
 }
-a#bout01011-17 {
+#bout01011-17 {
 	background: transparent url('../images/p3_boutons_17.png') 0px 0px no-repeat;
 }
-a#bout01011-18 {
+#bout01011-18 {
 	background: transparent url('../images/p3_boutons_18.png') 0px 0px no-repeat;
 }
-a#bout01011-19 {
+#bout01011-19 {
 	background: transparent url('../images/p3_boutons_19.png') 0px 0px no-repeat;
 }
-a#bout01011-20 {
+#bout01011-20 {
 	background: transparent url('../images/p3_boutons_20.png') 0px 0px no-repeat;
 }
-a#bout01011-21 {
+#bout01011-21 {
 	background: transparent url('../images/p3_boutons_21.png') 0px 0px no-repeat;
 }
 
-a#bout01011-28 {
+#bout01011-28 {
 	background: transparent url('../images/p3_boutons_28.png') 0px 0px no-repeat;
 }
-a#bout01011-30 {
+#bout01011-30 {
 	background: transparent url('../images/p3_boutons_30.png') 0px 0px no-repeat;
 }
-a#bout01011-32 {
+#bout01011-32 {
 	background: transparent url('../images/p3_boutons_32.png') 0px 0px no-repeat;
 }
 
-a#bout01022-06 {
+#bout01022-06 {
 	background: transparent url('../images/p4_boutons_06.png') 0px 0px no-repeat;
 }
 
 
+h1.h1choix {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 70px;
+	font-weight: 400;
+	color: #fff;
+	/*letter-spacing: 1px;*/
+	text-shadow: -2px 2px 3px #000;
+	/*margin: 18px 0px 20px;*/
+	text-align: center;
+}
 
+div.iconfleche {
+	float: left;
+	display: inline-block;
+	width: 70px;
+	height: 48px;
+	background: transparent url(../images/iconeFleche.png) 0px 0px no-repeat;
+	margin-right: 12px;
+}
 
+div.iconvert {
+	float: left;
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	background: transparent url(../images/pictos.png) 0px 0px no-repeat;
+	margin: 0px 12px 0px 80px;
+}
+div.iconvert-1 {
+	background-position: 0px 0px;
+}
+div.iconvert-2 {
+	background-position: 0px -64px;
+}
+div.iconvert-3 {
+	background-position: 0px -128px;
+}
 
+.tabletitlesh1,
+.tabletitlesh2,
+.tabletitlesh3 {
+	text-align: left;
+	padding: 0px;
+}
+.tabletitlesh1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 1px;
+	text-shadow: -2px 2px 3px #000;
+	margin: 8px 0px 20px;
+}
+.tabletitlesh1 span {
+	display: inline-block;
+	font-family: 'Quicksand', sans-serif;
+}
+.tabletitlesh2 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #dd4b26;
+	font-weight: bolder;
+	margin: 6px 0px;
+}
+.tabletitlesh3 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #27377e;
+	font-weight: bold;
+	margin: 6px 0px;
+}
+.tabletitlesh3 i {
+	font-style: normal;
+	font-variant: normal;
+	font-size: 0.8em;
+	font-weight: normal;
+}
 
+/* tables */
+table.table {
+}
+
+table.table,
+table.table tr,
+table.table td {
+	border: 1px solid #000;
+}
+/* pave */
+table.table tr,
+table.pave tr.bichro0 {
+	background-color: #aae2e1;
+}
+table.pave tr.bichro1 {
+	background-color: #89dcd8;
+}
+table.pave tr td {
+	font-size: 12px;
+	line-height: 14px;
+}
+table.pave tr >td:first-child {
+	text-align: left;
+	/*letter-spacing: 1px;*/
+	font-size: 14px;
+	font-weight: 700;
+	width: 21%;
+}
+table.pave tr >td:first-child +td {
+	text-align: left;
+	font-weight: 400;
+}
+table.pave tr >td:first-child +td +td,
+table.pave tr >td:first-child +td +td +td {
+	text-align: center;
+	letter-spacing: -1px;
+	font-weight: 700;
+	vertical-align: middle;
+	width: 12%;
+}
+
+table.pave tr.pave-inter {
+	background-color: #c8f7f6;
+}
+table.pave tr.pave-inter >td {
+	font-weight: 700;
+	color: #27377e;
+}
+table.pave tr.pave-inter >td i {
+	font-weight: 400;
+	font-size: 0.8em;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
 
 
 

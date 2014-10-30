@@ -1,0 +1,14 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE : {{ page.nom }} -->
+	<div id="BIG" class="fadein fill" data-effect="0|200" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
+		<!-- <div class="separ48"></div> -->
+		<div class="container">
+			<h1 class="tabletitlesh1 col-lg-12">
+				<div class="bouton01 forh1" id="{{ page.data.iconh1 }}"></div>
+				<span>{{ page.data.h1|raw }}</span>
+			</h1>
+			{% include "all-templates.html" %}
+		</div>
+	</div>
+{% endblock body %}

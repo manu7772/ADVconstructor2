@@ -301,15 +301,29 @@ function calculepage($item, $data) {
 		}
 	}
 	// menus
+	$i = 0;
 	if(isset($item['child']['menu'])) foreach($item['child']['menu'] as $n => $it2) {
 		$nom2 = $it2['attr']['nom'];
-		if($nom2 === null) $nom2 = $n;
+		if($nom2 === null) $nom2 = $n.$i++;
 		$data['pages'][$nomPAGE]['menu'][$nom2]["modele"] = $it2["attr"]["modele"];
 		foreach($it2['child']['item'] as $nom3 => $it3) {
 			$nom44 = $it3['attr']['nom'];
-			if($nom44 === null) $nom44 = $nom4;
+			// if($nom44 === null) $nom44 = $nom4;
 			foreach($it3["attr"] as $nom4 => $val4) {
 				$data['pages'][$nomPAGE]['menu'][$nom2]['item'][$nom44][$nom4] = $val4;
+			}
+		}
+	}
+	// templates
+	$i = 0;
+	if(isset($item['child']['templates'])) foreach($item['child']['templates'] as $n => $it2) {
+		// $html = $it2['attr']['nom'];
+		// if($nom2 === null) $nom2 = $n.$i++;
+		// $data['pages'][$nomPAGE]['templates'][$nom2]["fichier"] = $it2["attr"]["fichier"];
+		foreach($it2['child']['html'] as $nom3 => $it3) {
+			// $nom44 = $it3['attr']['nom'];
+			foreach($it3["attr"] as $nom4 => $val4) {
+				$data['pages'][$nomPAGE]['templates'][$i++][$nom4] = $val4;
 			}
 		}
 	}
