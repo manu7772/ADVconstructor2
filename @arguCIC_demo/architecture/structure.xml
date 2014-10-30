@@ -4,13 +4,13 @@
 		<!-- /////////////////// -->
 		<!-- // INDEX         // -->
 		<!-- /////////////////// -->
-		<page nom="accueil_01" modele="index.html" default="default">
+		<page nom="accueil" modele="index.html" default="default">
 			<data nom='title' val="CIC - Formation 2014" />
 			<data nom='refresh' val="15|sommaire" />
 			<data nom="fulldoc" val="1" />
 			<data nom='background' val="images/p1.png" />
 			<menu nom="navigator" modele="navigator.html">
-				<!-- <item nom="menuPrec" url="accueil_01" /> -->
+				<!-- <item nom="menuPrec" url="accueil" /> -->
 				<item nom="histback" val="-1" />
 				<item nom="menuSuiv" url="sommaire" />
 				<!-- <item nom="histforw" val="1" /> -->
@@ -28,26 +28,27 @@
 			<menu nom="navigator" modele="navigator.html">
 				<item nom="histback" val="-1" />
 				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="accueil" />
 			</menu>
 			<menu nom="sommaire1">
-				<item nom="accueil00" url="accueil_01" data-effect="100|400" id="bout01011-05" title="Page d'accueil" />
-				<item nom="accueil01" url="accueil_01" data-effect="200|400" id="bout01011-07" title="" />
-				<item nom="accueil02" url="accueil_01" data-effect="300|400" id="bout01011-09" title="" />
-				<item nom="accueil03" url="accueil_01" data-effect="400|400" id="bout01011-11" title="" />
-				<item nom="accueil04" url="accueil_01" data-effect="500|400" id="bout01011-13" title="" />
-				<item nom="accueil05" url="accueil_01" data-effect="600|400" id="bout01011-14" title="" />
-				<item nom="CP" url="page_CP_choix" data-effect="700|400" id="bout01011-15" title="CP" />
-				<item nom="accueil07" url="accueil_01" data-effect="800|400" id="bout01011-16" title="" />
-				<item nom="accueil08" url="accueil_01" data-effect="900|400" id="bout01011-17" title="" />
-				<item nom="accueil09" url="accueil_01" data-effect="1000|400" id="bout01011-18" title="" />
-				<item nom="accueil10" url="accueil_01" data-effect="1100|400" id="bout01011-19" title="" />
-				<item nom="accueil11" url="accueil_01" data-effect="1200|400" id="bout01011-20" title="" />
-				<item nom="accueil12" url="accueil_01" data-effect="1300|400" id="bout01011-21" title="" />
+				<item nom="CA" url="page_CA_choix" data-effect="100|400" id="bout01011-05" title="Conseiller Accueil" />
+				<item nom="BC" url="page_CB_choix" data-effect="200|400" id="bout01011-07" title="Conseiller Bancaire" />
+				<item nom="CC" url="page_CC_choix" data-effect="300|400" id="bout01011-09" title="Conseiller Clientèle" />
+				<item nom="CP" url="page_CP_choix" data-effect="700|400" id="bout01011-15" title="Conseiller Patrimonial" />
+				<item nom="accueil03" url="accueil" data-effect="400|400" id="bout01011-11" title="" />
+				<item nom="accueil04" url="accueil" data-effect="500|400" id="bout01011-13" title="" />
+				<item nom="accueil05" url="accueil" data-effect="600|400" id="bout01011-14" title="" />
+				<item nom="accueil07" url="accueil" data-effect="800|400" id="bout01011-16" title="" />
+				<item nom="accueil08" url="accueil" data-effect="900|400" id="bout01011-17" title="" />
+				<item nom="accueil09" url="accueil" data-effect="1000|400" id="bout01011-18" title="" />
+				<item nom="accueil10" url="accueil" data-effect="1100|400" id="bout01011-19" title="" />
+				<item nom="accueil11" url="accueil" data-effect="1200|400" id="bout01011-20" title="" />
+				<item nom="accueil12" url="accueil" data-effect="1300|400" id="bout01011-21" title="" />
 			</menu>
 			<menu nom="sommaire2">
-				<item nom="accueil13" url="accueil_01" data-effect="1800|400" id="bout01011-28" title="" />
-				<item nom="accueil14" url="accueil_01" data-effect="1900|400" id="bout01011-30" title="" />
-				<item nom="accueil15" url="accueil_01" data-effect="2000|400" id="bout01011-32" title="" />
+				<item nom="accueil13" url="accueil" data-effect="1800|400" id="bout01011-28" title="" />
+				<item nom="accueil14" url="accueil" data-effect="1900|400" id="bout01011-30" title="" />
+				<item nom="accueil15" url="accueil" data-effect="2000|400" id="bout01011-32" title="" />
 			</menu>
 		</page>
 
@@ -55,9 +56,237 @@
 		<!-- // PAGES         // -->
 		<!-- /////////////////// -->
 
+		<!-- /////////////////// -->
+		<!-- // C Accueil     // -->
+		<!-- /////////////////// -->
+
+		<!-- CA:choix -->
+		<page nom="page_CA_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="fulldoc" val="3" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Accueil" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CA_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CA_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CA_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_CA_02" modele="page-templates.html">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="bout01011-05" />
+			<templates>
+				<html fichier="tableau_CA_pave2.html" />
+				<html fichier="tableau_CA_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CA_03" modele="page-templates.html">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="bout01011-05" />
+			<templates>
+				<html fichier="tableau_CA_pave3.html" />
+				<html fichier="tableau_CA_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CA_04" modele="page-templates.html">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="bout01011-05" />
+			<templates>
+				<html fichier="tableau_CA_pave1.html" />
+				<html fichier="tableau_CA_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Bancaire    // -->
+		<!-- /////////////////// -->
+
+		<!-- CB:choix -->
+		<page nom="page_CB_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="fulldoc" val="3" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Bancaire" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CB_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CB_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CB_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CB_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<!-- CB:02 -->
+		<page nom="page_CB_02" modele="page-templates.html">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="bout01011-07" />
+			<templates>
+				<html fichier="tableau_CB_pave2.html" />
+				<html fichier="tableau_CB_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CB_03" modele="page-templates.html">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="bout01011-07" />
+			<templates>
+				<html fichier="tableau_CB_pave3.html" />
+				<html fichier="tableau_CB_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CB_04" modele="page-templates.html">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="bout01011-07" />
+			<templates>
+				<html fichier="tableau_CB_pave1.html" />
+				<html fichier="tableau_CB_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Clientèle    // -->
+		<!-- /////////////////// -->
+
+		<!-- CC:choix -->
+		<page nom="page_CC_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="fulldoc" val="3" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Clientèle" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CC_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CC_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CC_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CC_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<!-- CC:02 -->
+		<page nom="page_CC_02" modele="page-templates.html">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="bout01011-09" />
+			<templates>
+				<html fichier="tableau_CC_pave2.html" />
+				<html fichier="tableau_CC_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CC_03" modele="page-templates.html">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="bout01011-09" />
+			<templates>
+				<html fichier="tableau_CC_pave3.html" />
+				<html fichier="tableau_CC_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CC_04" modele="page-templates.html">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="fulldoc" val="3" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="bout01011-09" />
+			<templates>
+				<html fichier="tableau_CC_pave1.html" />
+				<html fichier="tableau_CC_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Patrimonial // -->
+		<!-- /////////////////// -->
+
 		<!-- CP:choix -->
 		<page nom="page_CP_choix" modele="sous-intro-1.html">
-			<data nom='title' val="CP" />
+			<data nom='title' val="Conseiller Patrimonial" />
 			<data nom="fulldoc" val="3" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Conseiller Patrimonial" />
@@ -74,21 +303,21 @@
 			</menu>
 		</page>
 		<!-- CP:01 -->
-		<page nom="page_CP_01" modele="sous-intro-2.html">
-			<data nom='title' val="CP" />
-			<data nom="fulldoc" val="3" />
-			<data nom='background' val="images/p4_fond.png" />
-			<data nom='titre' val="images/p4_boutons_03.png" />
-			<menu nom="navigator" modele="navigator.html">
-				<item nom="histback" val="-1" />
-				<item nom="menuSuiv" url="page_CP_02" />
+		<!-- <page nom="page_CP_01" modele="sous-intro-2.html"> -->
+			<!-- <data nom='title' val="CP" /> -->
+			<!-- <data nom="fulldoc" val="3" /> -->
+			<!-- <data nom='background' val="images/p4_fond.png" /> -->
+			<!-- <data nom='titre' val="images/p4_boutons_03.png" /> -->
+			<!-- <menu nom="navigator" modele="navigator.html"> -->
+				<!-- <item nom="histback" val="-1" /> -->
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
 				<!-- <item nom="menuSuiv" val="1" /> -->
-				<item nom="home" url="sommaire" />
-			</menu>
-			<menu nom="sommaire2">
-				<item nom="accueil01" url="page_CP_02" data-effect="500|400" id="bout01022-06" title="" />
-			</menu>
-		</page>
+				<!-- <item nom="home" url="sommaire" /> -->
+			<!-- </menu> -->
+			<!-- <menu nom="sommaire2"> -->
+				<!-- <item nom="accueil01" url="page_CP_02" data-effect="500|400" id="bout01022-06" title="" /> -->
+			<!-- </menu> -->
+		<!-- </page> -->
 		<!-- CP:exemple visu pleine page -->
 		<!-- <page nom="exemple visu pleine page" modele="page-tableau.html"> -->
 			<!-- <data nom='title' val="CP - Tableau1" /> -->
@@ -104,7 +333,7 @@
 		<!-- </page> -->
 		<!-- CP:02 -->
 		<page nom="page_CP_02" modele="page-templates.html">
-			<data nom='title' val="CP - Tableau1" />
+			<data nom='title' val="Conseiller Patrimonial" />
 			<data nom="fulldoc" val="3" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
@@ -121,7 +350,7 @@
 			</menu>
 		</page>
 		<page nom="page_CP_03" modele="page-templates.html">
-			<data nom='title' val="CP - Tableau1" />
+			<data nom='title' val="Conseiller Patrimonial" />
 			<data nom="fulldoc" val="3" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
@@ -138,7 +367,7 @@
 			</menu>
 		</page>
 		<page nom="page_CP_04" modele="page-templates.html">
-			<data nom='title' val="CP - Tableau1" />
+			<data nom='title' val="Conseiller Patrimonial" />
 			<data nom="fulldoc" val="3" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
