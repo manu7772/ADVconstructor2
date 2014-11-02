@@ -258,7 +258,10 @@ function emptyDir($dir) {
 function basicpage($item, $data) {
 	global $cpt;
 	$nomPAGE = $item['attr']['nom'];
-	$data['pages'][$nomPAGE]['modele'] = $item['attr']['modele'];
+	foreach ($item['attr'] as $nom1 => $value1) if($nom1 !== "nom") {
+		$data['pages'][$nomPAGE][$nom1] = $value1;
+	}
+	// $data['pages'][$nomPAGE]['modele'] = $item['attr']['modele'];
 	$data['pages'][$nomPAGE]['nom'] = $nomPAGE;
 	$data['pages'][$nomPAGE]['locate'] = "html/";
 	$data['pages'][$nomPAGE]['go'] = "../";

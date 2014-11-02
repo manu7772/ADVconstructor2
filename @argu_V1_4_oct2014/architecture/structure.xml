@@ -6,13 +6,6 @@
 			<data nom='menuhaut' val="ok" />
 			<data nom='title' val="Ferrero - Parcours" />
 			<data nom='imagefond' val="BIG_accueil" />
-			<animation phases="#0:500|#1:6000|#2:6000|#3:6000|#4:6000|#5:5000" run="true" mode="sequ">
-				<sprite nom="oval1" image="images/onglet01.png" posX="42px" posY="130px" animate="#1|s:fadeIn|i:800" zindex="5100" />
-				<sprite nom="oval2" image="images/onglet02.png" posX="42px" posY="130px" animate="#2|s:fadeIn|i:800" zindex="5101" />
-				<sprite nom="oval3" image="images/onglet03.png" posX="42px" posY="130px" animate="#3|s:fadeIn|i:800" zindex="5103" />
-				<sprite nom="oval4" image="images/onglet04.png" posX="42px" posY="130px" animate="#4|s:fadeIn|i:800" zindex="5104" />
-				<sprite nom="oval5" image="images/onglet05.png" posX="52px" posY="150px" animate="#5|s:fadeIn|i:800" zindex="5105" />
-			</animation>
 		</page>
 		<page nom="conf_01" modele="index.html">
 			<data nom='menuhaut' val='conf_01' />

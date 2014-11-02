@@ -1,24 +1,16 @@
 {% extends "root.html" %}
 {% block body %}
 	<!-- PAGE : {{ page.nom }} -->
-	<div id="BIG" class="fadein fill" data-effect="0|200" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
-		<div class="separ48"></div>
-		<div style="margin:0px auto;"><img src="{{ page.go }}{{ page.data.titre|raw }}" /></div>
-		<div class="separ180"></div>
-		{% if page.menu.sommaire1 is defined %}
-		<ul class="sommaire1">
-			{% for item in page.menu.sommaire1.item %}
-			<li><a href="{{ page.go }}{{ pages[item.url].url }}" class="bouton01 fadein" data-effect="{{ item['data-effect'] }}" id="{{ item.id }}" title="{{ item.title }}"></a></li>
+	<div id="BIG800" class="fadein fix" data-effect="0|400" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
+		{% if page.data.sommaire1 is defined %}
+			{% for menu in menus.sommaire1.items %}
+			<a href="{{ page.go }}{{ pages[menu.url].url }}" id="{{ menu.id }}" data-effect="{{ menu['data-effect'] }}" class="boutonSommaire1 fadein somm1hover"></a>
 			{% endfor %}
-		</ul>
 		{% endif %}
-		<div class="separ48"></div>
-		{% if page.menu.sommaire2 is defined %}
-		<ul class="sommaire2">
-			{% for item in page.menu.sommaire2.item %}
-			<li><a href="{{ page.go }}{{ pages[item.url].url }}" class="bouton02 fadein" data-effect="{{ item['data-effect'] }}" id="{{ item.id }}" title="{{ item.title }}"></a></li>
+		{% if page.data.sommaire2 is defined %}
+			{% for menu in menus.sommaire2.items %}
+			<a href="{{ page.go }}{{ pages[menu.url].url }}" id="{{ menu.id }}" data-effect="{{ menu['data-effect'] }}" class="boutonSommaire2 fadein"></a>
 			{% endfor %}
-		</ul>
 		{% endif %}
 	</div>
 {% endblock body %}
