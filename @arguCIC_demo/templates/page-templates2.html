@@ -1,0 +1,18 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE&nbsp;: {{ page.nom }} -->
+	<div id="BIG" class="fadein fill" data-effect="0|200" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
+		<div class="separ24"></div>
+		<div class="container">
+			<h1 class="pagetpl2 col-lg-12">{{ page.data.h1|raw }}</h1>
+			<div class="row">
+				<div class="col-lg-2 col-sm-1 hidden-xs"></div>
+				<div class="col-lg-8 col-sm-10 col-xs-12">
+				{% include "all-templates.html" %}
+				</div>
+				<div class="col-lg-2 col-sm-1 hidden-xs"></div>
+		</div>
+	</div>
+	<br />
+	<br />
+{% endblock body %}
