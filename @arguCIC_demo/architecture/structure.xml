@@ -20,11 +20,12 @@
 		<!-- /////////////////// -->
 		<!-- // SOMMAIRE      // -->
 		<!-- /////////////////// -->
-		<page nom="sommaire" modele="intro.html" style="background-color:#442e14;">
+		<page nom="sommaire" modele="intro.html" style="background-color:#5d3602;">
 			<data nom='title' val="Sommaire" />
 			<data nom="fulldoc" val="2" />
 			<data nom='bodyBackground' val="images/fondRepeatXSommaire2.png" />
 			<data nom='background' val="images/fondsommaire2.png" />
+			<data nom='backgroundLG' val="images/LGfondsommaire2.png" />
 			<!-- <data nom='bodyBackground' val="images/fondRepeatXSommaire.png" /> -->
 			<!-- <data nom='background' val="images/fondsommaire.png" /> -->
 			<menu nom="navigator" modele="navigator.html">
@@ -1082,10 +1083,10 @@
 
 		<!-- ReponsesQ:page -->
 		<page nom="page_ReponsesQ_page" modele="page-templates2.html" style="background-color:#648eb8;">
-			<data nom='title' val="Réponses à vous questions" />
+			<data nom='title' val="Réponses à vos questions" />
 			<data nom="fulldoc" val="3" />
 			<data nom='bodyBackground' val="images/fond.png" />
-			<data nom="h1" val="Réponses à vous questions" />
+			<data nom="h1" val="Réponses à vos questions" />
 			<menu nom="navigator" modele="navigator.html">
 				<item nom="histback" val="-1" />
 				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
@@ -1128,25 +1129,25 @@
 		<!-- menu sommaire 1 -->
 		<menu nom="sommaire1" modele="sommaire1menu.html">
 			<item nom="CA" url="page_CA_choix" data-effect="100|400" id="Sbouton01" title="Conseiller Accueil" />
-			<item nom="BC" url="page_CB_choix" data-effect="200|400" id="Sbouton02" title="Conseiller Bancaire" />
-			<item nom="CC" url="page_CC_choix" data-effect="300|400" id="Sbouton03" title="Conseiller Clientèle" />
-			<item nom="CP" url="page_CP_choix" data-effect="400|400" id="Sbouton04" title="Conseiller Patrimonial" />
-			<item nom="CApro" url="page_CApro_choix" data-effect="500|400" id="Sbouton05" title="Chargé d'Affaires Pro" />
-			<item nom="CAPL" url="page_CAPL_choix" data-effect="600|400" id="Sbouton06" title="Chargé d'Affaires&lt;br /&gt;Professions Libérales" />
-			<item nom="GSCE" url="page_GSCE_choix" data-effect="700|400" id="Sbouton07" title="Gestionnaire Services&lt;br /&gt;Clients Entreprises" />
-			<item nom="CAE" url="page_CAE_choix" data-effect="800|400" id="Sbouton08" title="Chargé d'Affaires Entreprises" />
-			<item nom="DAGP" url="page_DAGP_choix" data-effect="900|400" id="Sbouton09" title="Directeur d'Agence Grand Public" />
-			<item nom="DAE" url="page_DAE_choix" data-effect="1000|400" id="Sbouton10" title="Directeur d'Agence Entreprises" />
-			<item nom="BP" url="page_BP_choix" data-effect="1100|400" id="Sbouton11" title="Banque Privée" />
-			<item nom="ARS" url="page_ARS_choix" data-effect="1200|400" id="Sbouton12" title="Appui Réseau/Spécialistes" />
-			<item nom="FS" url="page_FS_choix" data-effect="1300|400" id="Sbouton13" title="Formations Sécurité" />
+			<item nom="BC" url="page_CB_choix" data-effect="150|400" id="Sbouton02" title="Conseiller Bancaire" />
+			<item nom="CC" url="page_CC_choix" data-effect="200|400" id="Sbouton03" title="Conseiller Clientèle" />
+			<item nom="CP" url="page_CP_choix" data-effect="250|400" id="Sbouton04" title="Conseiller Patrimonial" />
+			<item nom="CApro" url="page_CApro_choix" data-effect="300|400" id="Sbouton05" title="Chargé d'Affaires Pro" />
+			<item nom="CAPL" url="page_CAPL_choix" data-effect="350|400" id="Sbouton06" title="Chargé d'Affaires&lt;br /&gt;Professions Libérales" />
+			<item nom="GSCE" url="page_GSCE_choix" data-effect="400|400" id="Sbouton07" title="Gestionnaire Services&lt;br /&gt;Clients Entreprises" />
+			<item nom="CAE" url="page_CAE_choix" data-effect="450|400" id="Sbouton08" title="Chargé d'Affaires Entreprises" />
+			<item nom="DAGP" url="page_DAGP_choix" data-effect="500|400" id="Sbouton09" title="Directeur d'Agence Grand Public" />
+			<item nom="DAE" url="page_DAE_choix" data-effect="550|400" id="Sbouton10" title="Directeur d'Agence Entreprises" />
+			<item nom="BP" url="page_BP_choix" data-effect="600|400" id="Sbouton11" title="Banque Privée" />
+			<item nom="ARS" url="page_ARS_choix" data-effect="650|400" id="Sbouton12" title="Appui Réseau/Spécialistes" />
+			<item nom="FS" url="page_FS_choix" data-effect="700|400" id="Sbouton13" title="Formations Sécurité" />
 		</menu>
 		<!-- menu sommaire 2 -->
 		<menu nom="sommaire2" modele="sommaire2menu.html">
-			<item nom="outilsAthena" url="page_outilsFA_page" data-effect="1800|400" id="Sbouton16" title="FORMAT et ATHENA : 2 outils liés à la formation" />
-			<item nom="ReponsesQ" url="page_ReponsesQ_page" data-effect="1900|400" id="Sbouton18" title="Réponses à vous questions" />
-			<item nom="ModesIncript" url="page_ModesInsc_page" data-effect="2000|400" id="Sbouton17" title="Les modes d'inscription" />
-			<item nom="Interlocuteurs" url="page_interloc_page" data-effect="2100|400" id="Sbouton26" title="Vos interlocuteurs" />
+			<item nom="outilsAthena" url="page_outilsFA_page" data-effect="750|400" id="Sbouton16" title="FORMAT et ATHENA : 2 outils liés à la formation" />
+			<item nom="ModesIncript" url="page_ModesInsc_page" data-effect="800|400" id="Sbouton17" title="Les modes d'inscription" />
+			<item nom="ReponsesQ" url="page_ReponsesQ_page" data-effect="850|400" id="Sbouton18" title="Réponses à vos questions" />
+			<item nom="Interlocuteurs" url="page_interloc_page" data-effect="900|400" id="Sbouton26" title="Vos interlocuteurs" />
 		</menu>
 	</menus>
 </ARGUMENTAIRE>

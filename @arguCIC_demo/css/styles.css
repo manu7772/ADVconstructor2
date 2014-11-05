@@ -95,6 +95,12 @@ div#test {
 }
 
 
+@media all and (min-width: 991px) {
+	table.pave {
+		width: 60%;
+	}
+}
+
   /***************************/
  /* STRUCTURE DE PAGE       */
 /***************************/
@@ -114,14 +120,25 @@ div#BIG800 {
 	height: 600px;
 	width: 800px;
 }
-div#BIG1416 {
+div#div#BIG1000, div#BIG1220 {
 	background-position: top center;
 	background-color: transparent;
 	/*position: relative;*/
 	/*margin: 0px auto;*/
+	min-height:1200px;
+	height:auto !important;
 	height: inherit;
 	/*width: inherit;*/
-	min-width:800px;
+	min-width:1220px;
+	width:auto !important;
+	width:inherit;
+}
+div#BIG1000 {
+	min-height:800px;
+	height:auto !important;
+	height: inherit;
+	/*width: inherit;*/
+	min-width:1000px;
 	width:auto !important;
 	width:inherit;
 }
@@ -133,6 +150,14 @@ div.BIG_neutre {
 }
 video {
 	z-index:0;
+}
+#introtosommaire {
+	display: block;
+	width: 70%;
+	height: 100%;
+	margin: 0px auto;
+	/*border: 1px dotted orange;*/
+	cursor: pointer;
 }
 
 div#navigator {
@@ -170,13 +195,13 @@ div#navigator >div.fleche-droite >a {
 div#navigatorIE >div.fleche-gauche,
 div#navigator >div.fleche-gauche {
 	float: left;
-	background:transparent url("images/fleches2.png") left top no-repeat;
+	background:transparent url("images/fleches.png") left top no-repeat;
 	margin-left: 8px;
 }
 div#navigatorIE >div.fleche-droite,
 div#navigator >div.fleche-droite {
 	float: right;
-	background:transparent url("images/fleches2.png") -40px top no-repeat;
+	background:transparent url("images/fleches.png") -40px top no-repeat;
 	margin-right: 8px;
 }
 #homeButton {
@@ -230,6 +255,24 @@ div.ctrlsprite {
 	background-position: 0px -95px;
 }
 
+.boutonSommaire1LG {
+	display: block;
+	position:absolute;
+	/*border: 1px dotted orange;*/
+	width: 153px;
+	height: 153px;
+	overflow: hidden;
+	text-align: right;
+	cursor: pointer;
+	background-position: 0px 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+.somm1hoverLG:hover,
+.somm1hoverLG:active {
+	background-position: 0px -153px;
+}
+
 .boutonSommaire2 {
 	display: block;
 	position:absolute;
@@ -249,19 +292,37 @@ div.ctrlsprite {
 	background-position: 0px -57px;
 }
 
+.boutonSommaire2LG {
+	display: block;
+	position:absolute;
+	/*border: 1px dotted orange;*/
+	width: 255px;
+	height: 91px;
+	overflow: hidden;
+	text-align: right;
+	cursor: pointer;
+	background-position: 0px 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.somm2hoverLG:hover,
+.somm2hoverLG:active {
+	background-position: 0px -91px;
+}
+
 
   /***************************/
  /* page_01_01_1            */
 /***************************/
 
 ul.choix {
-	list-style-type: none;
 	display: block;
 	margin: 0px auto;
-	/*width: 650px;*/
 	width: 100%;
 	position: absolute;
 	bottom: 40px;
+	text-align: center;
 }
 ul.choix >li {
 	display: inline-block;
@@ -367,6 +428,95 @@ ul.choix >li {
 	background-image: url('../images/SommaireBoutons_26.png');
 	margin-left: 572px;
 	top: 424px;
+}
+
+
+#Sbouton01LG {
+	background-image: url('../images/LGSommaireBoutons_01.png');
+	margin-left: 133px;
+	top: 140px;
+	border: none;
+}
+#Sbouton02LG {
+	background-image: url('../images/LGSommaireBoutons_02.png');
+	margin-left: 313px;
+	top: 140px;
+}
+#Sbouton03LG {
+	background-image: url('../images/LGSommaireBoutons_03.png');
+	margin-left: 133px;
+	top: 316px;
+}
+#Sbouton04LG {
+	background-image: url('../images/LGSommaireBoutons_04.png');
+	margin-left: 313px;
+	top: 316px;
+}
+#Sbouton05LG {
+	background-image: url('../images/LGSommaireBoutons_05.png');
+	margin-left: 606px;
+	top: 140px;
+}
+#Sbouton06LG {
+	background-image: url('../images/LGSommaireBoutons_06.png');
+	margin-left: 606px;
+	top: 316px;
+}
+#Sbouton07LG {
+	background-image: url('../images/LGSommaireBoutons_07.png');
+	margin-left: 910px;
+	top: 140px;
+}
+#Sbouton08LG {
+	background-image: url('../images/LGSommaireBoutons_08.png');
+	margin-left: 910px;
+	top: 316px;
+}
+#Sbouton09LG {
+	background-image: url('../images/LGSommaireBoutons_09.png');
+	margin-left: 99px;
+	top: 501px;
+}
+#Sbouton10LG {
+	background-image: url('../images/LGSommaireBoutons_10.png');
+	margin-left: 277px;
+	top: 501px;
+}
+#Sbouton11LG {
+	background-image: url('../images/LGSommaireBoutons_11.png');
+	margin-left: 498px;
+	top: 501px;
+}
+#Sbouton12LG {
+	background-image: url('../images/LGSommaireBoutons_12.png');
+	margin-left: 722px;
+	top: 501px;
+}
+#Sbouton13LG {
+	background-image: url('../images/LGSommaireBoutons_13.png');
+	margin-left: 947px;
+	top: 501px;
+}
+
+#Sbouton16LG {
+	background-image: url('../images/LGSommaireBoutons_16.png');
+	margin-left: 75px;
+	top: 680px;
+}
+#Sbouton17LG {
+	background-image: url('../images/LGSommaireBoutons_17.png');
+	margin-left: 343px;
+	top: 680px;
+}
+#Sbouton18LG {
+	background-image: url('../images/LGSommaireBoutons_18.png');
+	margin-left: 610px;
+	top: 680px;
+}
+#Sbouton26LG {
+	background-image: url('../images/LGSommaireBoutons_26.png');
+	margin-left: 879px;
+	top: 680px;
 }
 
 .forh1 {
@@ -482,7 +632,9 @@ table.table tr >th:first-child +th +th +th {
 	text-align: center;
 }
 /* pave */
-table.table tr,
+table.pave {
+	margin: 0px auto;
+}
 table.pave tr.bichro0 {
 	background-color: #aae2e1;
 }
@@ -652,4 +804,36 @@ table.page tr.interpage1 >td {
 	color: #fff;
 }
 
+
+.image {
+	border:none;
+	display: block;
+	width: 100%;
+	margin: 8px auto;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 100px;
+}
+
+.image-ctr {
+	background-position: center top;
+}
+
+.image-in {
+	background-size: contain;
+}
+.image-crop {
+	background-size: cover;
+}
+
+.image-left180 {
+	width: 180px;
+	float: left;
+	margin: 0px;
+	height: 100px;
+	background-size: cover;
+}
+.margforimage180 {
+	margin-left: 190px;
+}
 

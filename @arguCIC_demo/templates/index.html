@@ -2,5 +2,6 @@
 {% block body %}
 	<!-- PAGE&nbsp;: {{ page.nom }} -->
 	<div id="BIG" class="fadein fill70" data-effect="500|2000" style="background-image:url('{{ page.go }}{{ page.data.background }}');">
+		<a id="introtosommaire" href="{{ page.go }}{{ pages[page.menu.navigator.item.menuSuiv.url].url }}"></a>
 	</div>
 {% endblock body %}

@@ -200,5 +200,24 @@ jQuery(document).ready(function($) {
 		$(this).delay(parseInt(attr[0])).fadeIn(parseInt(attr[1]));
 	});
 
+	/* **************************************************** */
+	/* FANCYBOX
+	/* **************************************************** */
+
+	var backgroundFCY = 'rgba(0, 0, 50, 0.40)';
+
+	$('.fancybox').fancybox({
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : 0,
+		helpers : {
+			overlay : {
+				css : {
+					'background' : backgroundFCY
+				}
+			}
+		}
+	});
+
 });
 
