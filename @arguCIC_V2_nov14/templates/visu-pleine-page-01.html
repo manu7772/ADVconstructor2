@@ -1,0 +1,5 @@
+{% if page.data.visuPleinePage is defined %}
+<div class="fill-itnr fadein" data-effect="200|400" style="margin:0px auto;width:85%;background-image:url('{{ page.go }}{{ page.data.visuPleinePage }}');">
+	<img src="{{ page.go }}{{ page.data.visuPleinePage }}" style="visibility:hidden;width:inherit;" />
+</div>
+{% endif %}

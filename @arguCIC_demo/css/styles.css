@@ -93,7 +93,11 @@ div#test {
 .gras {
 	font-weight: bold;
 }
-
+div.ctrbloc {
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
 
 @media all and (min-width: 991px) {
 	table.pave {
@@ -109,9 +113,10 @@ body {
 }
 
 div#BIG {
-	width: 100%;
+	width: inherit;
 	height: 100%;
 	text-align: center;
+	position: relative;
 	/*height: 640px;*/
 }
 div#BIG800 {
@@ -316,17 +321,41 @@ div.ctrlsprite {
  /* page_01_01_1            */
 /***************************/
 
-ul.choix {
-	display: block;
-	margin: 0px auto;
-	width: 100%;
+div.container_choix {
 	position: absolute;
-	bottom: 40px;
-	text-align: center;
+	bottom: 50px;
+	left: 0px;
+	width: 100%;
+	/*background-color: red;*/
 }
-ul.choix >li {
-	display: inline-block;
+div.choix {
+	/*display: block;*/
+	margin: 0px auto;
+	width: 618px;
+	position: relative;
+	/*bottom: 50px;*/
+	/*text-align: center;*/
+	background-color: transparent;
+}
+div.choix >div {
+	display: block;
 	width: 206px;
+	float: left;
+	background-color: transparent;
+}
+
+table.tchoix {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	display: block;
+}
+table.tchoix >tr {
+	width: 618px;
+	height: 251px;
+}
+table.tchoix >tr >td {
+	width: 206px;
+	height: 251px;
 }
 
 .boutonChoix1, .boutonChoix2, .boutonChoix3 {
@@ -566,13 +595,16 @@ div.iconvert-3 {
 	background-position: 0px -128px;
 }
 
-.tabletitlesh1,
-.tabletitlesh2,
-.tabletitlesh3 {
+.tablestitlesh1,
+.tablestitlesh2,
+.tablestitlesh3 {
 	text-align: left;
 	padding: 0px;
 }
-.tabletitlesh1, .pagetpl2 {
+.tablestitlesh1 {
+	text-align: center;
+}
+.tablestitlesh1, .pagetpl2 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 28px;
 	font-weight: 700;
@@ -584,42 +616,56 @@ div.iconvert-3 {
 .pagetpl2 {
 	text-align: center;
 }
-.tabletitlesh1 span, .pagetpl2 span {
+.tablestitlesh1 span, .pagetpl2 span {
 	display: inline-block;
 	font-family: 'Quicksand', sans-serif;
 }
-.tabletitlesh2 {
+.tablestitlesh2 {
 	font-size: 16px;
 	line-height: 20px;
 	color: #dd4b26;
 	font-weight: bolder;
 	margin: 6px 0px;
 }
-.tabletitlesh3 {
+.tablestitlesh3 {
 	font-size: 16px;
 	line-height: 16px;
 	color: #27377e;
 	font-weight: bold;
 	margin: 6px 0px;
 }
-.tabletitlesh3 i {
+.tablestitlesh3 i {
 	font-style: normal;
 	font-variant: normal;
 	font-size: 0.8em;
 	font-weight: normal;
 }
 
-/* tables */
-table.table {
+.pavebloc h4 {
+	color: #dd4b26;
+	text-align: center;
 }
 
-table.table,
-table.table tr,
-table.table td,
-table.table th {
-	border: 1px solid #006;
+/* tables */
+table {
+	border-collapse: separate;
+	border-spacing: 4px;
 }
-table.table tr >th {
+table * {
+	color: #333;
+	border: none;
+	/*vertical-align: top;*/
+	vertical-align: middle; /* vertical align : middle pour tous */
+}
+
+table.tables,
+table.tables tr,
+table.tables td,
+table.tables th {
+	border: 0px solid #006;
+	border: none;
+}
+table.tables tr >th {
 	background-color: #006;
 	color: #fff;
 	font-size: 10px;
@@ -627,19 +673,22 @@ table.table tr >th {
 	vertical-align: middle;
 	font-weight: 400;
 }
-table.table tr >th:first-child +th +th,
-table.table tr >th:first-child +th +th +th {
+table.tables tr >th:first-child +th +th,
+table.tables tr >th:first-child +th +th +th {
 	text-align: center;
+	vertical-align: middle;
 }
 /* pave */
 table.pave {
 	margin: 0px auto;
 }
 table.pave tr.bichro0 {
-	background-color: #aae2e1;
+	/*background-color: #aae2e1;*/
+	background-color: #84B5D8;
 }
 table.pave tr.bichro1 {
-	background-color: #89dcd8;
+	/*background-color: #89dcd8;*/
+	background-color: #84B5D8;
 }
 table.pave tr td {
 	font-size: 12px;
@@ -666,7 +715,8 @@ table.pave tr >td:first-child +td +td +td {
 }
 
 table.pave tr.pave-inter {
-	background-color: #c8f7f6;
+	/*background-color: #c8f7f6;*/
+	background-color: #97C2E0;
 }
 table.pave tr.pave-inter >td {
 	font-weight: 700;
@@ -675,6 +725,9 @@ table.pave tr.pave-inter >td {
 table.pave tr.pave-inter >td i {
 	font-weight: 400;
 	font-size: 0.8em;
+}
+tr.pave-inter * {
+	color: #27377e;
 }
 
 @-moz-document url-prefix() {
@@ -754,14 +807,17 @@ table.page {
 /* page */
 table.page tr,
 table.page tr.bichro0 {
-	background-color: #aae2e1;
+	/*background-color: #aae2e1;*/
+	background-color: #84B5D8;
 }
 table.page tr.bichro1 {
-	background-color: #89dcd8;
+	/*background-color: #89dcd8;*/
+	background-color: #84B5D8;
 }
 table.page tr td {
 	font-size: 12px;
 	line-height: 14px;
+	vertical-align: middle; /* vertical align : middle pour tous */
 }
 table.page tr td p.top,
 table.page tr td p {

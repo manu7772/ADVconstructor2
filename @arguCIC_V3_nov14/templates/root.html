@@ -1,0 +1,24 @@
+{% if modeSommaire != true %}
+	{% include "entete.html" %}
+
+	<body class="fix-rx" style="{% if page.data.bodyBackground is defined %}background-image:url('{{ page.go }}{{ page.data.bodyBackground }}');{% endif %}{% if page.style is defined %}{{ page.style }}{% endif %}">
+{% endif %}
+
+{% block body %}
+{% endblock body %}
+
+{% block commons %}
+{% if modeSommaire != true %}
+	{% include "navigator.html" %}
+{% endif %}
+{% include "sprites.html" %}
+{% include "mentions.html" %}
+{% endblock commons %}
+
+{% if modeSommaire != true %}
+	{% block javascripts %}
+	{% include "javascripts.html" %}
+	{% endblock javascripts %}
+	</body>
+	</html>
+{% endif %}

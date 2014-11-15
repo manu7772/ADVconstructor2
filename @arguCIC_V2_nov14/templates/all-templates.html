@@ -1,0 +1,3 @@
+{% if page.templates is defined %}
+{% for html in page.templates %}{% include html.fichier %}<div style="display:block;height:0px;clear:both;"></div>{% endfor %}
+{% endif %}

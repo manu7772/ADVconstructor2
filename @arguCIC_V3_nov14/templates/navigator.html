@@ -1,0 +1,21 @@
+<div id='navigator'>
+	{% if page.menu.navigator.item.menuPrec is defined %}
+	<div class="fleche-gauche"><a id="fleche-gauche" href="{{ page.goabs }}{{ pages[page.menu.navigator.item.menuPrec.url].urlabs }}" title="{{ pages[page.menu.navigator.item.menuPrec.url].data.title }}"></a></div>
+	{% elseif page.menu.navigator.item.histback is defined %}
+	<div class="fleche-gauche"><a id="fleche-gauche" title="Retour arrière" onclick="history.go({{ page.menu.navigator.item.histback.val }});" ></a></div>
+	{% endif %}
+
+	{% if page.menu.navigator.item.menuSuiv is defined %}
+	<div class="fleche-droite"><a id="fleche-droite" href="{{ page.goabs }}{{ pages[page.menu.navigator.item.menuSuiv.url].urlabs }}" title="{{ pages[page.menu.navigator.item.menuSuiv.url].data.title }}"></a></div>
+	{% elseif page.menu.navigator.item.histforw is defined %}
+	<div class="fleche-droite"><a id="fleche-droite" title="Retour avant" onclick="history.go({{ page.menu.navigator.item.histforw.val }});" ></a></div>
+	{% endif %}
+
+	{% if page.menu.navigator.item.home is defined %}
+	<a id="homeButton" href="{{ page.goabs }}{{ pages[page.menu.navigator.item.home.url].urlabs }}" class="retour"></a>
+	{% endif %}
+
+	{% if page.menu.navigator.item.generic is defined %}
+	<a id="sommaireButton" href="{{ page.goabs }}{{ generic.url }}" class="sommaire" title="Sommaire complet du document"></a>
+	{% endif %}
+</div>

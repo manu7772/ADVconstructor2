@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ARGUMENTAIRE>
-	<pages>
+	<pages generiquetemplate="generictemplate.html" nom="generiqueCIC">
 		<!-- /////////////////// -->
 		<!-- // INDEX         // -->
 		<!-- /////////////////// -->
 		<page nom="accueil" modele="index.html" default="default">
 			<data nom='title' val="CIC - Formation 2014" />
 			<data nom='refresh' val="15|sommaire" />
-			<data nom="fulldoc" val="1" />
+			<data nom="generictplord" val="1" />
 			<data nom='background' val="images/p1.png" />
 			<menu nom="navigator" modele="navigator.html">
 				<!-- <item nom="menuPrec" url="accueil" /> -->
@@ -22,7 +22,7 @@
 		<!-- /////////////////// -->
 		<page nom="sommaire" modele="intro.html" style="background-color:#5d3602;">
 			<data nom='title' val="Sommaire" />
-			<data nom="fulldoc" val="2" />
+			<data nom="generictplord" val="2" />
 			<data nom='bodyBackground' val="images/fondRepeatXSommaire2.png" />
 			<data nom='background' val="images/fondsommaire2.png" />
 			<data nom='backgroundLG' val="images/LGfondsommaire2.png" />
@@ -32,6 +32,7 @@
 				<item nom="histback" val="-1" />
 				<!-- <item nom="histforw" val="1" /> -->
 				<item nom="home" url="accueil" />
+				<item nom="generic" url="generiqueCIC" />
 			</menu>
 			<data nom='sommaire1' val="ok" />
 			<data nom='sommaire2' val="ok" />
@@ -48,7 +49,7 @@
 		<!-- CA:choix -->
 		<page nom="page_CA_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Conseiller Accueil" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="3" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Conseiller Accueil" />
 			<menu nom="navigator" modele="navigator.html">
@@ -65,7 +66,7 @@
 		</page>
 		<page nom="page_CA_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Accueil" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="4" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton01" />
@@ -82,7 +83,7 @@
 		</page>
 		<page nom="page_CA_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Accueil" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="5" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton01" />
@@ -99,7 +100,7 @@
 		</page>
 		<page nom="page_CA_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Accueil" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="6" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton01" />
@@ -122,7 +123,7 @@
 		<!-- CB:choix -->
 		<page nom="page_CB_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Conseiller Bancaire" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="7" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Conseiller Bancaire" />
 			<menu nom="navigator" modele="navigator.html">
@@ -140,7 +141,7 @@
 		<!-- CB:02 -->
 		<page nom="page_CB_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Bancaire" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="8" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton02" />
@@ -157,7 +158,7 @@
 		</page>
 		<page nom="page_CB_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Bancaire" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="9" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton02" />
@@ -174,7 +175,7 @@
 		</page>
 		<page nom="page_CB_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Bancaire" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="10" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton02" />
@@ -197,7 +198,7 @@
 		<!-- CC:choix -->
 		<page nom="page_CC_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Conseiller Clientèle" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="11" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Conseiller Clientèle" />
 			<menu nom="navigator" modele="navigator.html">
@@ -215,7 +216,7 @@
 		<!-- CC:02 -->
 		<page nom="page_CC_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Clientèle" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="12" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton03" />
@@ -232,7 +233,7 @@
 		</page>
 		<page nom="page_CC_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Clientèle" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="13" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton03" />
@@ -249,7 +250,7 @@
 		</page>
 		<page nom="page_CC_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Clientèle" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="14" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton03" />
@@ -272,7 +273,7 @@
 		<!-- CP:choix -->
 		<page nom="page_CP_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Conseiller Patrimonial" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="15" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Conseiller Patrimonial" />
 			<menu nom="navigator" modele="navigator.html">
@@ -290,7 +291,7 @@
 		<!-- CP:01 -->
 		<!-- <page nom="page_CP_01" modele="sous-intro-2.html"> -->
 			<!-- <data nom='title' val="CP" /> -->
-			<!-- <data nom="fulldoc" val="3" /> -->
+			<!-- <data nom="generictplord" val="16" /> -->
 			<!-- <data nom='background' val="images/p4_fond.png" /> -->
 			<!-- <data nom='titre' val="images/p4_boutons_03.png" /> -->
 			<!-- <menu nom="navigator" modele="navigator.html"> -->
@@ -306,7 +307,7 @@
 		<!-- CP:exemple visu pleine page -->
 		<!-- <page nom="exemple visu pleine page" modele="page-tableau.html"> -->
 			<!-- <data nom='title' val="CP - Tableau1" /> -->
-			<!-- <data nom="fulldoc" val="3" /> -->
+			<!-- <data nom="generictplord" val="17" /> -->
 			<!-- <data nom='bodyBackground' val="images/fond.png" /> -->
 			<!-- <data nom="visuPleinePage" val="images/P4_textes.png" /> -->
 			<!-- <menu nom="navigator" modele="navigator.html"> -->
@@ -319,7 +320,7 @@
 		<!-- CP:02 -->
 		<page nom="page_CP_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Patrimonial" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="18" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton04" />
@@ -336,7 +337,7 @@
 		</page>
 		<page nom="page_CP_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Patrimonial" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="19" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton04" />
@@ -353,7 +354,7 @@
 		</page>
 		<page nom="page_CP_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Conseiller Patrimonial" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="20" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton04" />
@@ -376,7 +377,7 @@
 		<!-- CApro:choix -->
 		<page nom="page_CApro_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Chargé d'Affaires Pro" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="21" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Chargé d'Affaires Pro" />
 			<menu nom="navigator" modele="navigator.html">
@@ -393,7 +394,7 @@
 		</page>
 		<page nom="page_CApro_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Pro" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="22" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton05" />
@@ -410,7 +411,7 @@
 		</page>
 		<page nom="page_CApro_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Pro" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="23" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton05" />
@@ -427,7 +428,7 @@
 		</page>
 		<page nom="page_CApro_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Pro" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="24" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton05" />
@@ -450,7 +451,7 @@
 		<!-- CAPL:choix -->
 		<page nom="page_CAPL_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="25" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Chargé d'Affaires Professions Libérales" />
 			<menu nom="navigator" modele="navigator.html">
@@ -467,7 +468,7 @@
 		</page>
 		<page nom="page_CAPL_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="26" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton06" />
@@ -484,7 +485,7 @@
 		</page>
 		<page nom="page_CAPL_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="27" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton06" />
@@ -501,7 +502,7 @@
 		</page>
 		<page nom="page_CAPL_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="28" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton06" />
@@ -524,7 +525,7 @@
 		<!-- GSCE:choix -->
 		<page nom="page_GSCE_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="29" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Gestionnaire Services Clients Entreprises" />
 			<menu nom="navigator" modele="navigator.html">
@@ -541,7 +542,7 @@
 		</page>
 		<page nom="page_GSCE_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="30" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton07" />
@@ -558,7 +559,7 @@
 		</page>
 		<page nom="page_GSCE_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="31" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton07" />
@@ -575,7 +576,7 @@
 		</page>
 		<page nom="page_GSCE_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="32" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton07" />
@@ -598,7 +599,7 @@
 		<!-- CAE:choix -->
 		<page nom="page_CAE_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Chargé d'Affaires Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="33" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Chargé d'Affaires Entreprises" />
 			<menu nom="navigator" modele="navigator.html">
@@ -615,7 +616,7 @@
 		</page>
 		<page nom="page_CAE_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="34" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton08" />
@@ -632,7 +633,7 @@
 		</page>
 		<page nom="page_CAE_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="35" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton08" />
@@ -649,7 +650,7 @@
 		</page>
 		<page nom="page_CAE_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Chargé d'Affaires Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="36" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton08" />
@@ -672,7 +673,7 @@
 		<!-- BP:choix -->
 		<page nom="page_BP_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Banque Privée" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="37" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Banque Privée" />
 			<menu nom="navigator" modele="navigator.html">
@@ -689,7 +690,7 @@
 		</page>
 		<page nom="page_BP_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Banque Privée" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="38" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton11" />
@@ -706,7 +707,7 @@
 		</page>
 		<page nom="page_BP_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Banque Privée" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="39" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton11" />
@@ -723,7 +724,7 @@
 		</page>
 		<page nom="page_BP_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Banque Privée" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="40" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton11" />
@@ -746,7 +747,7 @@
 		<!-- DAGP:choix -->
 		<page nom="page_DAGP_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Directeur d'Agence Grand Public" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="41" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Directeur d'Agence Grand Public" />
 			<menu nom="navigator" modele="navigator.html">
@@ -763,7 +764,7 @@
 		</page>
 		<page nom="page_DAGP_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Grand Public" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="42" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton09" />
@@ -780,7 +781,7 @@
 		</page>
 		<page nom="page_DAGP_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Grand Public" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="43" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton09" />
@@ -797,7 +798,7 @@
 		</page>
 		<page nom="page_DAGP_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Grand Public" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="44" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton09" />
@@ -820,7 +821,7 @@
 		<!-- DAE:choix -->
 		<page nom="page_DAE_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Directeur d'Agence Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="45" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Directeur d'Agence Entreprises" />
 			<menu nom="navigator" modele="navigator.html">
@@ -837,7 +838,7 @@
 		</page>
 		<page nom="page_DAE_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="46" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton10" />
@@ -854,7 +855,7 @@
 		</page>
 		<page nom="page_DAE_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="47" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton10" />
@@ -871,7 +872,7 @@
 		</page>
 		<page nom="page_DAE_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Directeur d'Agence Entreprises" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="48" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton10" />
@@ -894,7 +895,7 @@
 		<!-- ARS:choix -->
 		<page nom="page_ARS_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Appui Réseau/Spécialistes" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="49" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Appui Réseau/Spécialistes" />
 			<menu nom="navigator" modele="navigator.html">
@@ -911,7 +912,7 @@
 		</page>
 		<page nom="page_ARS_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Appui Réseau/Spécialistes" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="50" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton12" />
@@ -928,7 +929,7 @@
 		</page>
 		<page nom="page_ARS_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Appui Réseau/Spécialistes" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="51" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton12" />
@@ -945,7 +946,7 @@
 		</page>
 		<page nom="page_ARS_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Appui Réseau/Spécialistes" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="52" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton12" />
@@ -968,7 +969,7 @@
 		<!-- FS:choix -->
 		<page nom="page_FS_choix" modele="sous-intro-1.html">
 			<data nom='title' val="Formations Sécurité" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="53" />
 			<data nom='background' val="images/pageChoix.png" />
 			<data nom="h1" val="Formations Sécurité" />
 			<menu nom="navigator" modele="navigator.html">
@@ -985,7 +986,7 @@
 		</page>
 		<page nom="page_FS_02" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Formations Sécurité" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="54" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
 			<data nom="iconh1" val="Sbouton13" />
@@ -1002,7 +1003,7 @@
 		</page>
 		<page nom="page_FS_03" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Formations Sécurité" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="55" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
 			<data nom="iconh1" val="Sbouton13" />
@@ -1019,7 +1020,7 @@
 		</page>
 		<page nom="page_FS_04" modele="page-templates.html" style="background-color:#648eb8;">
 			<data nom='title' val="Formations Sécurité" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="56" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
 			<data nom="iconh1" val="Sbouton13" />
@@ -1042,7 +1043,7 @@
 		<!-- outilsFA:page -->
 		<page nom="page_outilsFA_page" modele="page-templates2.html" style="background-color:#648eb8;">
 			<data nom='title' val="FORMAT et ATHENA : 2 outils liés à la formation" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="57" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="FORMAT et ATHENA : 2 outils liés à la formation" />
 			<menu nom="navigator" modele="navigator.html">
@@ -1063,7 +1064,7 @@
 		<!-- ModesInsc:page -->
 		<page nom="page_ModesInsc_page" modele="page-templates2.html" style="background-color:#648eb8;">
 			<data nom='title' val="Les modes d'inscription" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="58" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Les modes d'inscription" />
 			<menu nom="navigator" modele="navigator.html">
@@ -1084,7 +1085,7 @@
 		<!-- ReponsesQ:page -->
 		<page nom="page_ReponsesQ_page" modele="page-templates2.html" style="background-color:#648eb8;">
 			<data nom='title' val="Réponses à vos questions" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="59" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Réponses à vos questions" />
 			<menu nom="navigator" modele="navigator.html">
@@ -1105,7 +1106,7 @@
 		<!-- interloc:page -->
 		<page nom="page_interloc_page" modele="page-templates2.html" style="background-color:#648eb8;">
 			<data nom='title' val="Vos interlocuteurs" />
-			<data nom="fulldoc" val="3" />
+			<data nom="generictplord" val="60" />
 			<data nom='bodyBackground' val="images/fond.png" />
 			<data nom="h1" val="Vos interlocuteurs" />
 			<menu nom="navigator" modele="navigator.html">

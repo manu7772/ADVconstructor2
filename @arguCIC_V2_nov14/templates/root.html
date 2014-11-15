@@ -1,0 +1,17 @@
+{% include "entete.html" %}
+
+<body class="fix-rx" style="{% if page.data.bodyBackground is defined %}background-image:url('{{ page.go }}{{ page.data.bodyBackground }}');{% endif %}{% if page.style is defined %}{{ page.style }}{% endif %}">
+{% block body %}
+{% endblock body %}
+
+{% block commons %}
+{% include "navigator.html" %}
+{% include "sprites.html" %}
+{% include "mentions.html" %}
+{% endblock commons %}
+
+{% block javascripts %}
+{% include "javascripts.html" %}
+{% endblock javascripts %}
+</body>
+</html>

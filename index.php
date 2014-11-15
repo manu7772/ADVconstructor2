@@ -36,6 +36,8 @@ if($_GET['test']=='test') {
 	$test = false;
 }
 $dossPpal = null;
+$contenuAllPages = null; // fichier de contenu de toutes les pages
+$cpt = 0;
 
 creationADV();
 
@@ -74,13 +76,13 @@ function affActiv($dirs) {
 }
 
 function creationADV() {
-	global $dossPpal;
+	global $dossPpal, $contenuAllPages;
 	if($_POST) {
 		$OK = true;
 		$dossPpal = $_POST["ADV"];
 		echo("<h1>Génération de l'ADV</h1>");
 		echo("<div class='fenppale'>");
-		echo("<h2>Vérification des éléments</h2>");
+		echo("	<h2>Vérification des éléments</h2>");
 		// Récupération du fichier de description XML
 		$filesXML = ListFiles("/".$dossPpal."/architecture/", "#^[a-zA-Z0-9-_.]{1,}(\.)(xml)$#i");
 		// affDump($filesXML);
@@ -177,28 +179,32 @@ function creationADV() {
 
 			require_once("aequickxml.class.php");
 			// $fichier = "structure.xml";
-			$cpt = 10000;
 			$description = AeQuickXML::parseX(@simplexml_load_file($dossPpal."/architecture/".$filesXML[0]));
-			// affDump("Contenu du fichier : ", $description);
+			// affDump($filesXML[0], $description);
+// ----->	// Verification si création de page générique
+			if(isset($description['pages'][0]['attr'])) {
+				$data["generic"] = $description['pages'][0]['attr'];
+				$data["generic"]["url"] = "html/".$data["generic"]['generiquetemplate'];
+				echo("<p style='color:white;background-color:red;'>&nbsp;- Creation du template générique : ".$data["generic"]['generiquetemplate']." (nom = \"".$data["generic"]['nom']."\")</p>");
+			} else $data["generic"] = false;
 			// Création basique de PAGES ORIGINALES (pas des copies)
 			foreach($description['pages'][0]['child']['page'] as $item) if(!isset($item['attr']['copie'])) {
 				$data = basicpage($item, $data);
 				$data = calculepage($item, $data);
 			}
 			// Création basique de PAGES en COPIE
-			foreach($description['pages'][0]['child']['page'] as $item) if(isset($item['attr']['copie'])) {
-				$data = basicpage($item, $data);
-				$data = calculepage($item, $data);
-			}
+			// foreach($description['pages'][0]['child']['page'] as $item) if(isset($item['attr']['copie'])) {
+			// 	$data = basicpage($item, $data);
+			// 	$data = calculepage($item, $data);
+			// }
 			// Récupération des données de MENUS
 			foreach($description['menus'][0]['child']['menu'] as $item) {
 				$nomPAGE = $item['attr']['nom'];
 				$data['menus'][$nomPAGE]['modele'] = $item['attr']['modele'];
 				foreach($item['child']['item'] as $num => $val) {
 					foreach($val["attr"] as $n2 => $v3) $data['menus'][$nomPAGE]['items'][$num][$n2] = $v3;
-				} 
+				}
 			}
-			affDump("Données envoyées Twig : ", $data);
 
 			// Génération des pages d'après modèles TWIG
 			echo("<h2>Génération de l'ADV <span>".$dossPpal."</span> : commencement...</h2>");
@@ -209,8 +215,38 @@ function creationADV() {
 			$loader = new Twig_Loader_Filesystem($dossPpal.'/templates');
 			$twig = new Twig_Environment($loader, array('charset' => 'utf-8','cache' => false));
 
+			// page sommaire générique
+			if($data["generic"] !== false) {
+				// récup page par défaut - sert de modèle
+				$defaultpage = $data["defaultpage"];
+				$details = $data["pages"][$defaultpage];
+				$details["url"] = $data["generic"]['url'];
+				$details["modele"] = $data["generic"]['generiquetemplate'];
+				$details["go"] = "../";
+				$details["locate"] = "html/";
+				unset($details["menu"]["navigator"]["item"]["menuSuiv"]);
+				unset($details["refresh"]);
+
+				$data["generic"] = $details;
+				$data["page"] = $data["generic"];
+
+				$dataSommaire = $data;
+				// Transformation des liens
+				foreach ($dataSommaire["pages"] as $nom => $page) {
+					$dataSommaire["pages"][$nom]['go'] = "#";
+					$dataSommaire["pages"][$nom]['url'] = $nom;
+				}
+
+				$rendu = $twig->render($data["generic"]['modele'], $dataSommaire);
+				if(false != file_put_contents($dd."/".$data["generic"]['url'], $rendu)) {
+					chmod($dd."/".$data["generic"]['url'], 0777);
+					echo('<p class="ok">Création réussie pour le sommaire '.$data["generic"]['url'].'</p>');
+				} else echo("<h2 class='error'>Echec lors de la création du fichier ".$data["generic"]['url']."</h2>");
+			}
+
 			foreach($data['pages'] as $nom => $details) {
-				$rendu = $twig->render($details['modele'], array("page" => $details, "pages" => $data['pages'], "menus" => $data['menus']));
+				$data["page"] = $details;
+				$rendu = $twig->render($details['modele'], $data);
 				$suivi = $suivi."<div class='fenppale close'><h3>".$nom." ( ".$details['url']." )</h3><p>".nl2br(htmlspecialchars($rendu))."</p></div>";
 				if(false != file_put_contents($dd."/".$details['url'], $rendu)) {
 					chmod($dd."/".$details['url'], 0777);
@@ -224,7 +260,17 @@ function creationADV() {
 		// Affichage du contenu des fichiers générés
 		echo("<h1>Fichiers générés : contenus</h1>");
 		echo $suivi; // Affichage des templates créés
+		// Affichage des données envoyées à Twig
+		affDump("Données envoyées Twig", $data);
 	}
+}
+
+function fillchars($texte, $n = 9, $char = "0") {
+	$texte = $texte."";
+	while(strlen($texte) < $n) {
+		$texte = $char.$texte;
+	}
+	return $texte;
 }
 
 function affDump($nom, $data) {
@@ -264,9 +310,9 @@ function basicpage($item, $data) {
 	// $data['pages'][$nomPAGE]['modele'] = $item['attr']['modele'];
 	$data['pages'][$nomPAGE]['nom'] = $nomPAGE;
 	$data['pages'][$nomPAGE]['locate'] = "html/";
-	$data['pages'][$nomPAGE]['go'] = "../";
-	$data['pages'][$nomPAGE]['html'] = $nomPAGE."_".$cpt++.".html";
-	$data['pages'][$nomPAGE]['url'] = "html/".$data['pages'][$nomPAGE]['html'];
+	$data['pages'][$nomPAGE]['go'] = $data['pages'][$nomPAGE]['goabs'] = "../";
+	$data['pages'][$nomPAGE]['html'] = $nomPAGE."_".fillchars($cpt++).".html";
+	$data['pages'][$nomPAGE]['url'] = $data['pages'][$nomPAGE]['urlabs'] = "html/".$data['pages'][$nomPAGE]['html'];
 	if($item['attr']['default'] == "default") {
 		$data['defaultpage'] = $nomPAGE;
 		$data['pages'][$nomPAGE]['html'] = $item['attr']['modele'];

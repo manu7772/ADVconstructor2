@@ -1,0 +1,18 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE&nbsp;: {{ page.nom }} -->
+	<div id="BIG1220" class="fadein fix" data-effect="0|400" style="background-image:url('{{ page.goabs }}{{ page.data.backgroundLG }}');">
+		<div style="width:1220px;height:inherit;margin:0px auto;">
+		{% if page.data.sommaire1 is defined %}
+			{% for menu in menus.sommaire1.items %}
+			<a href="{{ page.go }}{{ pages[menu.url].url }}" id="{{ menu.id }}LG" data-effect="{{ menu['data-effect'] }}" class="boutonSommaire1LG fadein somm1hoverLG"></a>
+			{% endfor %}
+		{% endif %}
+		{% if page.data.sommaire2 is defined %}
+			{% for menu in menus.sommaire2.items %}
+			<a href="{{ page.go }}{{ pages[menu.url].url }}" id="{{ menu.id }}LG" data-effect="{{ menu['data-effect'] }}" class="boutonSommaire2LG fadein"></a>
+			{% endfor %}
+		{% endif %}
+		</div>
+	</div>
+{% endblock body %}

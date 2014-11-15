@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARGUMENTAIRE>
+	<pages generiquetemplate="generictemplate.html" nom="generiqueCIC">
+		<!-- /////////////////// -->
+		<!-- // INDEX         // -->
+		<!-- /////////////////// -->
+		<page nom="accueil" modele="index.html" default="default">
+			<data nom='title' val="CIC - Formation 2014" />
+			<data nom='refresh' val="15|sommaire" />
+			<data nom="generictplord" val="1" />
+			<data nom='background' val="images/p1.png" />
+			<menu nom="navigator" modele="navigator.html">
+				<!-- <item nom="menuPrec" url="accueil" /> -->
+				<item nom="histback" val="-1" />
+				<item nom="menuSuiv" url="sommaire" />
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<!-- /////////////////// -->
+		<!-- // SOMMAIRE      // -->
+		<!-- /////////////////// -->
+		<page nom="sommaire" modele="intro.html" style="background-color:#5d3602;">
+			<data nom='title' val="Sommaire" />
+			<data nom="generictplord" val="2" />
+			<data nom='bodyBackground' val="images/fondRepeatXSommaire2.png" />
+			<data nom='background' val="images/fondsommaire2.png" />
+			<data nom='backgroundLG' val="images/LGfondsommaire2.png" />
+			<!-- <data nom='bodyBackground' val="images/fondRepeatXSommaire.png" /> -->
+			<!-- <data nom='background' val="images/fondsommaire.png" /> -->
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="accueil" />
+				<item nom="generic" url="generiqueCIC" />
+			</menu>
+			<data nom='sommaire1' val="ok" />
+			<data nom='sommaire2' val="ok" />
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // PAGES         // -->
+		<!-- /////////////////// -->
+
+		<!-- /////////////////// -->
+		<!-- // C Accueil     // -->
+		<!-- /////////////////// -->
+
+		<!-- CA:choix -->
+		<page nom="page_CA_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="generictplord" val="3" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Accueil" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CA_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CA_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CA_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_CA_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="generictplord" val="4" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton01" />
+			<templates>
+				<html fichier="tableau_CA_pave2.html" />
+				<html fichier="tableau_CA_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CA_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="generictplord" val="5" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton01" />
+			<templates>
+				<html fichier="tableau_CA_pave3.html" />
+				<html fichier="tableau_CA_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CA_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Accueil" />
+			<data nom="generictplord" val="6" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton01" />
+			<templates>
+				<html fichier="tableau_CA_pave1.html" />
+				<html fichier="tableau_CA_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Bancaire    // -->
+		<!-- /////////////////// -->
+
+		<!-- CB:choix -->
+		<page nom="page_CB_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="generictplord" val="7" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Bancaire" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CB_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CB_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CB_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CB_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<!-- CB:02 -->
+		<page nom="page_CB_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="generictplord" val="8" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton02" />
+			<templates>
+				<html fichier="tableau_CB_pave2.html" />
+				<html fichier="tableau_CB_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CB_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="generictplord" val="9" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton02" />
+			<templates>
+				<html fichier="tableau_CB_pave3.html" />
+				<html fichier="tableau_CB_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CB_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Bancaire" />
+			<data nom="generictplord" val="10" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton02" />
+			<templates>
+				<html fichier="tableau_CB_pave1.html" />
+				<html fichier="tableau_CB_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Clientèle    // -->
+		<!-- /////////////////// -->
+
+		<!-- CC:choix -->
+		<page nom="page_CC_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="generictplord" val="11" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Clientèle" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CC_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CC_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CC_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CC_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<!-- CC:02 -->
+		<page nom="page_CC_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="generictplord" val="12" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton03" />
+			<templates>
+				<html fichier="tableau_CC_pave2.html" />
+				<html fichier="tableau_CC_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CC_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="generictplord" val="13" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton03" />
+			<templates>
+				<html fichier="tableau_CC_pave3.html" />
+				<html fichier="tableau_CC_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CC_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Clientèle" />
+			<data nom="generictplord" val="14" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton03" />
+			<templates>
+				<html fichier="tableau_CC_pave1.html" />
+				<html fichier="tableau_CC_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Patrimonial // -->
+		<!-- /////////////////// -->
+
+		<!-- CP:choix -->
+		<page nom="page_CP_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Conseiller Patrimonial" />
+			<data nom="generictplord" val="15" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Conseiller Patrimonial" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CP_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CP_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CP_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<!-- CP:01 -->
+		<!-- <page nom="page_CP_01" modele="sous-intro-2.html"> -->
+			<!-- <data nom='title' val="CP" /> -->
+			<!-- <data nom="generictplord" val="16" /> -->
+			<!-- <data nom='background' val="images/p4_fond.png" /> -->
+			<!-- <data nom='titre' val="images/p4_boutons_03.png" /> -->
+			<!-- <menu nom="navigator" modele="navigator.html"> -->
+				<!-- <item nom="histback" val="-1" /> -->
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<!-- <item nom="home" url="sommaire" /> -->
+			<!-- </menu> -->
+			<!-- <menu nom="sommaire2"> -->
+				<!-- <item nom="accueil01" url="page_CP_02" data-effect="500|400" id="bout01022-06" title="" /> -->
+			<!-- </menu> -->
+		<!-- </page> -->
+		<!-- CP:exemple visu pleine page -->
+		<!-- <page nom="exemple visu pleine page" modele="page-tableau.html"> -->
+			<!-- <data nom='title' val="CP - Tableau1" /> -->
+			<!-- <data nom="generictplord" val="17" /> -->
+			<!-- <data nom='bodyBackground' val="images/fond.png" /> -->
+			<!-- <data nom="visuPleinePage" val="images/P4_textes.png" /> -->
+			<!-- <menu nom="navigator" modele="navigator.html"> -->
+				<!-- <item nom="histback" val="-1" /> -->
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<!-- <item nom="home" url="sommaire" /> -->
+			<!-- </menu> -->
+		<!-- </page> -->
+		<!-- CP:02 -->
+		<page nom="page_CP_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Patrimonial" />
+			<data nom="generictplord" val="18" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton04" />
+			<templates>
+				<html fichier="tableau_CP_pave2.html" />
+				<html fichier="tableau_CP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CP_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Patrimonial" />
+			<data nom="generictplord" val="19" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton04" />
+			<templates>
+				<html fichier="tableau_CP_pave3.html" />
+				<html fichier="tableau_CP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CP_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Conseiller Patrimonial" />
+			<data nom="generictplord" val="20" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton04" />
+			<templates>
+				<html fichier="tableau_CP_pave1.html" />
+				<html fichier="tableau_CP_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Aff pro     // -->
+		<!-- /////////////////// -->
+
+		<!-- CApro:choix -->
+		<page nom="page_CApro_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Chargé d'Affaires Pro" />
+			<data nom="generictplord" val="21" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Chargé d'Affaires Pro" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CApro_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CApro_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CApro_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_CApro_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Pro" />
+			<data nom="generictplord" val="22" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton05" />
+			<templates>
+				<html fichier="tableau_CApro_pave2.html" />
+				<html fichier="tableau_CApro_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CApro_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Pro" />
+			<data nom="generictplord" val="23" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton05" />
+			<templates>
+				<html fichier="tableau_CApro_pave3.html" />
+				<html fichier="tableau_CApro_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CApro_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Pro" />
+			<data nom="generictplord" val="24" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton05" />
+			<templates>
+				<html fichier="tableau_CApro_pave1.html" />
+				<html fichier="tableau_CApro_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // C Aff pro lib // -->
+		<!-- /////////////////// -->
+
+		<!-- CAPL:choix -->
+		<page nom="page_CAPL_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
+			<data nom="generictplord" val="25" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Chargé d'Affaires Professions Libérales" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CAPL_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CAPL_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CAPL_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_CAPL_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
+			<data nom="generictplord" val="26" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton06" />
+			<templates>
+				<html fichier="tableau_CAPL_pave2.html" />
+				<html fichier="tableau_CAPL_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CAPL_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
+			<data nom="generictplord" val="27" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton06" />
+			<templates>
+				<html fichier="tableau_CAPL_pave3.html" />
+				<html fichier="tableau_CAPL_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CAPL_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Professions Libérales" />
+			<data nom="generictplord" val="28" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton06" />
+			<templates>
+				<html fichier="tableau_CAPL_pave1.html" />
+				<html fichier="tableau_CAPL_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // GestServ CEnt // -->
+		<!-- /////////////////// -->
+
+		<!-- GSCE:choix -->
+		<page nom="page_GSCE_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
+			<data nom="generictplord" val="29" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Gestionnaire Services Clients Entreprises" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_GSCE_02" data-effect="200|800" />
+				<item nom="choix02" url="page_GSCE_03" data-effect="400|800" />
+				<item nom="choix03" url="page_GSCE_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_GSCE_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
+			<data nom="generictplord" val="30" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton07" />
+			<templates>
+				<html fichier="tableau_GSCE_pave2.html" />
+				<html fichier="tableau_GSCE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_GSCE_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
+			<data nom="generictplord" val="31" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton07" />
+			<templates>
+				<html fichier="tableau_GSCE_pave3.html" />
+				<html fichier="tableau_GSCE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_GSCE_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Gestionnaire Services Clients Entreprises" />
+			<data nom="generictplord" val="32" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton07" />
+			<templates>
+				<html fichier="tableau_GSCE_pave1.html" />
+				<html fichier="tableau_GSCE_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Chargé Aff En // -->
+		<!-- /////////////////// -->
+
+		<!-- CAE:choix -->
+		<page nom="page_CAE_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Chargé d'Affaires Entreprises" />
+			<data nom="generictplord" val="33" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Chargé d'Affaires Entreprises" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_CAE_02" data-effect="200|800" />
+				<item nom="choix02" url="page_CAE_03" data-effect="400|800" />
+				<item nom="choix03" url="page_CAE_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_CAE_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Entreprises" />
+			<data nom="generictplord" val="34" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton08" />
+			<templates>
+				<html fichier="tableau_CAE_pave2.html" />
+				<html fichier="tableau_CAE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CAE_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Entreprises" />
+			<data nom="generictplord" val="35" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton08" />
+			<templates>
+				<html fichier="tableau_CAE_pave3.html" />
+				<html fichier="tableau_CAE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_CAE_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Chargé d'Affaires Entreprises" />
+			<data nom="generictplord" val="36" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton08" />
+			<templates>
+				<html fichier="tableau_CAE_pave1.html" />
+				<html fichier="tableau_CAE_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Chargé Aff En // -->
+		<!-- /////////////////// -->
+
+		<!-- BP:choix -->
+		<page nom="page_BP_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Banque Privée" />
+			<data nom="generictplord" val="37" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Banque Privée" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_BP_02" data-effect="200|800" />
+				<item nom="choix02" url="page_BP_03" data-effect="400|800" />
+				<item nom="choix03" url="page_BP_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_BP_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Banque Privée" />
+			<data nom="generictplord" val="38" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton11" />
+			<templates>
+				<html fichier="tableau_BP_pave2.html" />
+				<html fichier="tableau_BP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_BP_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Banque Privée" />
+			<data nom="generictplord" val="39" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton11" />
+			<templates>
+				<html fichier="tableau_BP_pave3.html" />
+				<html fichier="tableau_BP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_BP_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Banque Privée" />
+			<data nom="generictplord" val="40" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton11" />
+			<templates>
+				<html fichier="tableau_BP_pave1.html" />
+				<html fichier="tableau_BP_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // DirAg Gd Pub  // -->
+		<!-- /////////////////// -->
+
+		<!-- DAGP:choix -->
+		<page nom="page_DAGP_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Directeur d'Agence Grand Public" />
+			<data nom="generictplord" val="41" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Directeur d'Agence Grand Public" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_DAGP_02" data-effect="200|800" />
+				<item nom="choix02" url="page_DAGP_03" data-effect="400|800" />
+				<item nom="choix03" url="page_DAGP_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_DAGP_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Grand Public" />
+			<data nom="generictplord" val="42" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton09" />
+			<templates>
+				<html fichier="tableau_DAGP_pave2.html" />
+				<html fichier="tableau_DAGP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_DAGP_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Grand Public" />
+			<data nom="generictplord" val="43" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton09" />
+			<templates>
+				<html fichier="tableau_DAGP_pave3.html" />
+				<html fichier="tableau_DAGP_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_DAGP_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Grand Public" />
+			<data nom="generictplord" val="44" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton09" />
+			<templates>
+				<html fichier="tableau_DAGP_pave1.html" />
+				<html fichier="tableau_DAGP_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // DirAg Entrep  // -->
+		<!-- /////////////////// -->
+
+		<!-- DAE:choix -->
+		<page nom="page_DAE_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Directeur d'Agence Entreprises" />
+			<data nom="generictplord" val="45" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Directeur d'Agence Entreprises" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_DAE_02" data-effect="200|800" />
+				<item nom="choix02" url="page_DAE_03" data-effect="400|800" />
+				<item nom="choix03" url="page_DAE_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_DAE_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Entreprises" />
+			<data nom="generictplord" val="46" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton10" />
+			<templates>
+				<html fichier="tableau_DAE_pave2.html" />
+				<html fichier="tableau_DAE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_DAE_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Entreprises" />
+			<data nom="generictplord" val="47" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton10" />
+			<templates>
+				<html fichier="tableau_DAE_pave3.html" />
+				<html fichier="tableau_DAE_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_DAE_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Directeur d'Agence Entreprises" />
+			<data nom="generictplord" val="48" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton10" />
+			<templates>
+				<html fichier="tableau_DAE_pave1.html" />
+				<html fichier="tableau_DAE_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Appui Res/spé // -->
+		<!-- /////////////////// -->
+
+		<!-- ARS:choix -->
+		<page nom="page_ARS_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Appui Réseau/Spécialistes" />
+			<data nom="generictplord" val="49" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Appui Réseau/Spécialistes" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_ARS_02" data-effect="200|800" />
+				<item nom="choix02" url="page_ARS_03" data-effect="400|800" />
+				<item nom="choix03" url="page_ARS_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_ARS_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Appui Réseau/Spécialistes" />
+			<data nom="generictplord" val="50" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton12" />
+			<templates>
+				<html fichier="tableau_ARS_pave2.html" />
+				<html fichier="tableau_ARS_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_ARS_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Appui Réseau/Spécialistes" />
+			<data nom="generictplord" val="51" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton12" />
+			<templates>
+				<html fichier="tableau_ARS_pave3.html" />
+				<html fichier="tableau_ARS_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_ARS_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Appui Réseau/Spécialistes" />
+			<data nom="generictplord" val="52" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton12" />
+			<templates>
+				<html fichier="tableau_ARS_pave1.html" />
+				<html fichier="tableau_ARS_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Formation Sécu// -->
+		<!-- /////////////////// -->
+
+		<!-- FS:choix -->
+		<page nom="page_FS_choix" modele="sous-intro-1.html">
+			<data nom='title' val="Formations Sécurité" />
+			<data nom="generictplord" val="53" />
+			<data nom='background' val="images/pageChoix.png" />
+			<data nom="h1" val="Formations Sécurité" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<menu nom="choix">
+				<item nom="choix01" url="page_FS_02" data-effect="200|800" />
+				<item nom="choix02" url="page_FS_03" data-effect="400|800" />
+				<item nom="choix03" url="page_FS_04" data-effect="600|800" />
+			</menu>
+		</page>
+		<page nom="page_FS_02" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Formations Sécurité" />
+			<data nom="generictplord" val="54" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous venez d'intégrer le CIC NO ?" />
+			<data nom="iconh1" val="Sbouton13" />
+			<templates>
+				<!-- <html fichier="tableau_FS_pave2.html" /> -->
+				<html fichier="tableau_FS_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_FS_03" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Formations Sécurité" />
+			<data nom="generictplord" val="55" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous allez ou venez d'évoluer dans la fonction ?" />
+			<data nom="iconh1" val="Sbouton13" />
+			<templates>
+				<!-- <html fichier="tableau_FS_pave3.html" /> -->
+				<html fichier="tableau_FS_pave1.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+		<page nom="page_FS_04" modele="page-templates.html" style="background-color:#648eb8;">
+			<data nom='title' val="Formations Sécurité" />
+			<data nom="generictplord" val="56" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vous êtes en poste ?&lt;br /&gt;Vous souhaitez renforcer vos compétences ?" />
+			<data nom="iconh1" val="Sbouton13" />
+			<templates>
+				<html fichier="tableau_FS_pave1.html" />
+				<html fichier="tableau_FS_pave4.html" />
+			</templates>
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="????" /> -->
+				<!-- <item nom="histforw" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Format/Athéna // -->
+		<!-- /////////////////// -->
+
+		<!-- outilsFA:page -->
+		<page nom="page_outilsFA_page" modele="page-templates3noresponsive.html" style="background-color:#648eb8;">
+			<data nom='title' val="FORMAT et ATHENA : 2 outils liés à la formation" />
+			<data nom="generictplord" val="57" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="FORMAT et ATHENA : 2 outils liés à la formation" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<templates>
+				<html fichier="page_outilsFA.html" />
+			</templates>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // ModesIncript  // -->
+		<!-- /////////////////// -->
+
+		<!-- ModesInsc:page -->
+		<page nom="page_ModesInsc_page" modele="page-templates3noresponsive.html" style="background-color:#648eb8;">
+			<data nom='title' val="Les modes d'inscription" />
+			<data nom="generictplord" val="58" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Les modes d'inscription" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<templates>
+				<html fichier="page_ModesInsc.html" />
+			</templates>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // ReponsQuestio // -->
+		<!-- /////////////////// -->
+
+		<!-- ReponsesQ:page -->
+		<page nom="page_ReponsesQ_page" modele="page-templates3noresponsive.html" style="background-color:#648eb8;">
+			<data nom='title' val="Réponses à vos questions" />
+			<data nom="generictplord" val="59" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Réponses à vos questions" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<templates>
+				<html fichier="page_ReponsesQA.html" />
+			</templates>
+		</page>
+
+		<!-- /////////////////// -->
+		<!-- // Interlocuteurs// -->
+		<!-- /////////////////// -->
+
+		<!-- interloc:page -->
+		<page nom="page_interloc_page" modele="page-templates3noresponsive.html" style="background-color:#648eb8;">
+			<data nom='title' val="Vos interlocuteurs" />
+			<data nom="generictplord" val="60" />
+			<data nom='bodyBackground' val="images/fond.png" />
+			<data nom="h1" val="Vos interlocuteurs" />
+			<menu nom="navigator" modele="navigator.html">
+				<item nom="histback" val="-1" />
+				<!-- <item nom="menuSuiv" url="page_CP_02" /> -->
+				<!-- <item nom="menuSuiv" val="1" /> -->
+				<item nom="home" url="sommaire" />
+			</menu>
+			<templates>
+				<html fichier="page_interloc.html" />
+			</templates>
+		</page>
+
+	</pages>
+
+
+	<!-- ///// -->
+	<!-- MENUS -->
+	<!-- ///// -->
+	<menus>
+		<!-- menu sommaire 1 -->
+		<menu nom="sommaire1" modele="sommaire1menu.html">
+			<item nom="CA" url="page_CA_choix" data-effect="100|400" id="Sbouton01" title="Conseiller Accueil" />
+			<item nom="BC" url="page_CB_choix" data-effect="150|400" id="Sbouton02" title="Conseiller Bancaire" />
+			<item nom="CC" url="page_CC_choix" data-effect="200|400" id="Sbouton03" title="Conseiller Clientèle" />
+			<item nom="CP" url="page_CP_choix" data-effect="250|400" id="Sbouton04" title="Conseiller Patrimonial" />
+			<item nom="CApro" url="page_CApro_choix" data-effect="300|400" id="Sbouton05" title="Chargé d'Affaires Pro" />
+			<item nom="CAPL" url="page_CAPL_choix" data-effect="350|400" id="Sbouton06" title="Chargé d'Affaires&lt;br /&gt;Professions Libérales" />
+			<item nom="GSCE" url="page_GSCE_choix" data-effect="400|400" id="Sbouton07" title="Gestionnaire Services&lt;br /&gt;Clients Entreprises" />
+			<item nom="CAE" url="page_CAE_choix" data-effect="450|400" id="Sbouton08" title="Chargé d'Affaires Entreprises" />
+			<item nom="DAGP" url="page_DAGP_choix" data-effect="500|400" id="Sbouton09" title="Directeur d'Agence Grand Public" />
+			<item nom="DAE" url="page_DAE_choix" data-effect="550|400" id="Sbouton10" title="Directeur d'Agence Entreprises" />
+			<item nom="BP" url="page_BP_choix" data-effect="600|400" id="Sbouton11" title="Banque Privée" />
+			<item nom="ARS" url="page_ARS_choix" data-effect="650|400" id="Sbouton12" title="Appui Réseau/Spécialistes" />
+			<item nom="FS" url="page_FS_choix" data-effect="700|400" id="Sbouton13" title="Formations Sécurité" />
+		</menu>
+		<!-- menu sommaire 2 -->
+		<menu nom="sommaire2" modele="sommaire2menu.html">
+			<item nom="outilsAthena" url="page_outilsFA_page" data-effect="750|400" id="Sbouton16" title="FORMAT et ATHENA : 2 outils liés à la formation" />
+			<item nom="ModesIncript" url="page_ModesInsc_page" data-effect="800|400" id="Sbouton17" title="Les modes d'inscription" />
+			<item nom="ReponsesQ" url="page_ReponsesQ_page" data-effect="850|400" id="Sbouton18" title="Réponses à vos questions" />
+			<item nom="Interlocuteurs" url="page_interloc_page" data-effect="900|400" id="Sbouton26" title="Vos interlocuteurs" />
+		</menu>
+	</menus>
+</ARGUMENTAIRE>

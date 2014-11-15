@@ -1,0 +1,32 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE&nbsp;: {{ page.nom }} -->
+	{% if modeSommaire != true %}
+	<div id="BIG" class="fadein fill-itnr" data-effect="0|200" style="background-image:url('{{ page.goabs }}{{ page.data.background }}');">
+	{% endif %}
+		<div class="separ24"></div>
+		<h1 class="h1choix">{{ page.data.h1|raw }}</h1>
+		<!-- <div class="separ24"></div> -->
+		<!-- <div class="separ48"></div> -->
+		<!-- <div class="separ48"></div> -->
+		<!-- <div class="separ180"></div> -->
+		<!-- <div class="separ180"></div> -->
+		{% if page.menu.choix is defined %}
+		<div class="container_choix">
+			<div class="choix{{ page.menu.choix.item|length }}">
+				<table class="tchoix{{ page.menu.choix.item|length }}">
+					<tr>
+						{% for item in page.menu.choix.item %}
+						<td>
+							<a href="{{ page.go }}{{ pages[item.url].url }}" class="{{ item.nom }} fadein" data-effect="{{ item['data-effect'] }}"></a>
+						</td>
+						{% endfor %}
+					</tr>
+				</table>
+			</div>
+		</div>
+		{% endif %}
+	{% if modeSommaire != true %}
+	</div>
+	{% endif %}
+{% endblock body %}

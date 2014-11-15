@@ -1,0 +1,28 @@
+{% extends "root.html" %}
+{% block body %}
+<!-- PAGE&nbsp;: {{ page.nom }} -->
+<div id="BIG1220">
+	<div class="separ24"></div>
+	<div class="container_text container-ctr pavepage">
+		<h1>CIC Plan de Formation 2015<br /><small>Document intégral</small></h1>
+	</div>
+	{% set modeSommaire = true %}
+	{% for pag in pages %}
+		{% if pag.style is defined %}{% set pagstyle = pag.style %}{% else %}{% set pagstyle = "" %}{% endif %}
+		{% if pag.data.modefill is defined %}{% set modefill = pag.data.modefill %}{% else %}{% set modefill = "fill" %}{% endif %}
+		<div id="{{ pag.nom }}" class="container_sommaire {{ modefill }}"{% if pag.data.bodyBackground is defined %}
+				 style="background-image:url('{{ generic.go }}{{ pag.data.bodyBackground }}');{{ pagstyle }}"
+			{%- elseif pag.data.background is defined %}
+				 style="background-image:url('{{ generic.go }}{{ pag.data.background }}');{{ pagstyle }}"
+			{%- else %}
+				style="{{ pagstyle }}"
+			{%- endif -%}>
+			{% include pag.modele with {'page': pag} %}
+		</div>
+	{% endfor %}
+	{% set modeSommaire = false %}
+	<br />
+	<br />
+	<br />
+</div>
+{% endblock body %}

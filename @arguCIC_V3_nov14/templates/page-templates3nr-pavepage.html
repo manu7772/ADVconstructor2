@@ -1,0 +1,15 @@
+{% extends "root.html" %}
+{% block body %}
+	<!-- PAGE&nbsp;: {{ page.nom }} -->
+	<div id="BIG" class="fadein fill" data-effect="0|200" style="{% if page.data.background is defined %}background-image:url('{{ page.go }}{{ page.data.background }}');{% endif %}">
+		<div class="separ24"></div>
+		<div class="container_text container-ctr container-70p pavepage">
+			<h1>
+				<span>{{ page.data.h1|raw }}</span>
+			</h1>
+			{% include "all-templates.html" %}
+		</div>
+		<br />
+		<br />
+	</div>
+{% endblock body %}
